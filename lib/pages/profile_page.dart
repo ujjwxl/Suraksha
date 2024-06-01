@@ -1,14 +1,61 @@
+// ignore_for_file: sort_child_properties_last
+
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:transparent_image/transparent_image.dart';
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
+
+  @override
+  State<ProfilePage> createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
+  late User user;
+  late String userId;
+
+  @override
+  void initState() {
+    super.initState();
+    user = FirebaseAuth.instance.currentUser!;
+    userId = user.uid;
+  }
 
   Future<DocumentSnapshot<Map<String, dynamic>>> getUserData(
       String userId) async {
     return FirebaseFirestore.instance.collection('users').doc(userId).get();
+  }
+
+  Future<void> _uploadImage() async {
+    ImagePicker picker = ImagePicker();
+    XFile? pickedFile = await picker.pickImage(source: ImageSource.gallery);
+
+    if (pickedFile != null) {
+      Reference referenceRoot = FirebaseStorage.instance.ref();
+      Reference referenceDirImages = referenceRoot.child('images');
+      Reference referenceImageToUpload = referenceDirImages.child(userId);
+
+      try {
+        await referenceImageToUpload.putFile(File(pickedFile.path));
+
+        String imageUrl = await referenceImageToUpload.getDownloadURL();
+        await FirebaseFirestore.instance
+            .collection('users')
+            .doc(userId)
+            .update({
+          'profilePicture': imageUrl,
+        });
+      } catch (e) {
+        // print(e);
+      }
+    }
   }
 
   @override
@@ -19,7 +66,13 @@ class ProfilePage extends StatelessWidget {
 
       return Scaffold(
         appBar: AppBar(
-          title: const Text('Profile Page'),
+          title: Text(
+            'Your Profile',
+            style: GoogleFonts.dmSans(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
           centerTitle: true,
         ),
         body: FutureBuilder<DocumentSnapshot<Map<String, dynamic>>>(
@@ -39,26 +92,126 @@ class ProfilePage extends StatelessWidget {
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(
-                    'Welcome,  ${userData['fullName']}',
-                    style: GoogleFonts.dmSans(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  Text(
-                    '${userData['email']}',
-                    style: GoogleFonts.dmSans(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  Text(
-                    '${userData['userId']}',
-                    style: GoogleFonts.dmSans(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                    ),
+                  Column(
+                    children: [
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(64),
+                            child: FadeInImage.memoryNetwork(
+                              placeholder: kTransparentImage,
+                              image: userData['profilePicture'],
+                              width: 128,
+                              height: 128,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          Positioned(
+                            child: IconButton(
+                              onPressed: _uploadImage,
+                              icon: const Icon(Icons.add_a_photo),
+                            ),
+                            bottom: -10,
+                            left: 80,
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Text(
+                        '${userData['fullName']}',
+                        style: GoogleFonts.dmSans(
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(
+                              color: Colors.grey[300] ?? Colors.transparent,
+                            ),
+                          ),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Icon(Icons.mail_outline),
+                                    Text(
+                                      '${userData['email']}',
+                                      style: GoogleFonts.dmSans(
+                                        fontSize: 16,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Divider(
+                                height: 1,
+                                color: Colors.grey[300],
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  // mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    const Icon(Icons.person_outline),
+                                    Text(
+                                      '${userData['userId']}',
+                                      style: GoogleFonts.dmSans(
+                                        fontSize: 16,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                color: Colors.grey[300] ?? Colors.transparent,
+                              ),
+                            ),
+                            child: ListTile(
+                              title: Text(
+                                'Sign Out',
+                                style: GoogleFonts.dmSans(
+                                  fontSize: 16,
+                                  color: Colors.red,
+                                ),
+                              ),
+                              leading: const Icon(
+                                Icons.exit_to_app,
+                                color: Colors.red,
+                              ),
+                              onTap: () {
+                                FirebaseAuth.instance.signOut();
+                                Navigator.of(context).pushNamed('/login');
+                              },
+                            )),
+                      )
+                    ],
                   ),
                 ],
               );

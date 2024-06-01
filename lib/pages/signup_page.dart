@@ -34,6 +34,8 @@ class _SignUpPageState extends State<SignUpPage> {
           'userId': userId,
           'fullName': nameTextController.text,
           'email': emailTextController.text,
+          'profilePicture':
+              'https://firebasestorage.googleapis.com/v0/b/trackingapp-3fedb.appspot.com/o/placeholder-image.jpg?alt=media&token=fc0def48-dbbf-4080-b05d-cb823390ab02'
         });
 
         ScaffoldMessenger.of(context).showSnackBar(

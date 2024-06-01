@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
+// import 'package:iconsax/iconsax.dart';
 import 'package:trackingapp/pages/fake_call_page.dart';
 import 'package:trackingapp/pages/group_page.dart';
 import 'package:trackingapp/pages/main_home_page.dart';
@@ -45,13 +45,17 @@ class _HomePageState extends State<HomePage> {
         selectedIndex: currentPageIndex,
         destinations: const <Widget>[
           NavigationDestination(
-            selectedIcon: Icon(Iconsax.home1),
-            icon: Icon(Iconsax.home),
+            // selectedIcon: Icon(Iconsax.home1),
+            // icon: Icon(Iconsax.home),
+            selectedIcon: Icon(Icons.home),
+            icon: Icon(Icons.home_outlined),
             label: 'Home',
           ),
           NavigationDestination(
-            selectedIcon: Icon(Iconsax.people5),
-            icon: Icon(Iconsax.people),
+            // selectedIcon: Icon(Iconsax.people5),
+            // icon: Icon(Iconsax.people),
+            selectedIcon: Icon(Icons.people),
+            icon: Icon(Icons.people_outline_sharp),
             label: 'My Group',
           ),
           NavigationDestination(
@@ -59,13 +63,17 @@ class _HomePageState extends State<HomePage> {
             label: 'SOS',
           ),
           NavigationDestination(
-            selectedIcon: Icon(Iconsax.call5),
-            icon: Icon(Iconsax.call),
+            // selectedIcon: Icon(Iconsax.call5),
+            // icon: Icon(Iconsax.call),
+            selectedIcon: Icon(Icons.call),
+            icon: Icon(Icons.call_outlined),
             label: 'Fake Call',
           ),
           NavigationDestination(
-            selectedIcon: Icon(Iconsax.profile_2user5),
-            icon: Icon(Iconsax.profile_2user4),
+            // selectedIcon: Icon(Iconsax.profile_2user5),
+            // icon: Icon(Iconsax.profile_2user4),
+            selectedIcon: Icon(Icons.person),
+            icon: Icon(Icons.person_outline_outlined),
             label: 'Profile',
           ),
         ],
