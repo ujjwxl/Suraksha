@@ -26,6 +26,7 @@ class _GroupPageState extends State<GroupPage> {
       });
     } catch (e) {
       print(e);
+
       // Handle error
     }
   }
@@ -80,6 +81,7 @@ class _GroupPageState extends State<GroupPage> {
 
   @override
   void initState() {
+    super.initState();
     _fetchGroupMembers();
   }
 
@@ -88,7 +90,7 @@ class _GroupPageState extends State<GroupPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Your group',
+          'Your Group',
           style: GoogleFonts.dmSans(
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -168,8 +170,15 @@ class _GroupPageState extends State<GroupPage> {
                 ),
               ),
             ),
-          const Text(
-            'Your members',
+          Text(
+            'Members',
+            style: GoogleFonts.dmSans(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(
+            height: 10,
           ),
           Expanded(
             child: ListView.builder(
@@ -191,25 +200,36 @@ class _GroupPageState extends State<GroupPage> {
                     }
                     final memberSnapshot = snapshot.data!;
                     return Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: ListTile(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                          side: BorderSide(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0, vertical: 4.0),
+                      child: Container(
+                        padding: const EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          border: Border.all(
                             color: Colors.grey[300] ?? Colors.transparent,
                           ),
+                          borderRadius: BorderRadius.circular(10.0),
                         ),
-                        leading: ClipRRect(
-                          borderRadius: BorderRadius.circular(32),
-                          child: FadeInImage.memoryNetwork(
-                            placeholder: kTransparentImage,
-                            image: memberSnapshot['profilePicture'],
-                            width: 32,
-                            height: 32,
-                            fit: BoxFit.cover,
+                        child: ListTile(
+                          leading: ClipRRect(
+                            borderRadius: BorderRadius.circular(32),
+                            child: FadeInImage.memoryNetwork(
+                              placeholder: kTransparentImage,
+                              image: memberSnapshot['profilePicture'],
+                              width: 48,
+                              height: 48,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          title: Text(
+                            memberSnapshot['fullName'],
+                            style: GoogleFonts.dmSans(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
-                        title: Text(memberSnapshot['fullName']),
                       ),
                     );
                   },
