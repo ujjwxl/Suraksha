@@ -6,6 +6,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:transparent_image/transparent_image.dart';
@@ -171,12 +172,29 @@ class _ProfilePageState extends State<ProfilePage> {
                                   // mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     const Icon(Icons.person_outline),
-                                    Text(
-                                      '${userData['userId']}',
-                                      style: GoogleFonts.dmSans(
-                                        fontSize: 16,
+                                    // Text(
+                                    //   '${userData['userId']}',
+                                    //   style: GoogleFonts.dmSans(
+                                    //     fontSize: 16,
+                                    //   ),
+                                    // ),
+                                    GestureDetector(
+                                      onLongPress: () {
+                                        Clipboard.setData(ClipboardData(
+                                            text: '${userData['userId']}'));
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(
+                                          const SnackBar(
+                                            content: Text(
+                                                'Text copied to clipboard!'),
+                                          ),
+                                        );
+                                      },
+                                      child: SelectableText(
+                                        '${userData['userId']}',
+                                        style: TextStyle(fontSize: 18),
                                       ),
-                                    ),
+                                    )
                                   ],
                                 ),
                               ),
