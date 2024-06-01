@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:trackingapp/pages/fake_call_page.dart';
 import 'package:trackingapp/pages/group_page.dart';
 import 'package:trackingapp/pages/main_home_page.dart';
@@ -25,10 +26,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Tracking App'),
-        centerTitle: true,
-      ),
+      // appBar: AppBar(
+      //   title: Text('Tracking App'),
+      //   centerTitle: true,
+      // ),
       body: IndexedStack(
         index: currentPageIndex,
         children: pages,
@@ -44,12 +45,13 @@ class _HomePageState extends State<HomePage> {
         selectedIndex: currentPageIndex,
         destinations: const <Widget>[
           NavigationDestination(
-            selectedIcon: Icon(Icons.home),
-            icon: Icon(Icons.home_outlined),
+            selectedIcon: Icon(Iconsax.home1),
+            icon: Icon(Iconsax.home),
             label: 'Home',
           ),
           NavigationDestination(
-            icon: Icon(Icons.people),
+            selectedIcon: Icon(Iconsax.people5),
+            icon: Icon(Iconsax.people),
             label: 'My Group',
           ),
           NavigationDestination(
@@ -57,11 +59,13 @@ class _HomePageState extends State<HomePage> {
             label: 'SOS',
           ),
           NavigationDestination(
-            icon: Icon(Icons.call),
+            selectedIcon: Icon(Iconsax.call5),
+            icon: Icon(Iconsax.call),
             label: 'Fake Call',
           ),
           NavigationDestination(
-            icon: Icon(Icons.person),
+            selectedIcon: Icon(Iconsax.profile_2user5),
+            icon: Icon(Iconsax.profile_2user4),
             label: 'Profile',
           ),
         ],
