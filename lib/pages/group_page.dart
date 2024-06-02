@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:trackingapp/pages/location_details_page.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class GroupPage extends StatefulWidget {
@@ -212,6 +213,15 @@ class _GroupPageState extends State<GroupPage> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: ListTile(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => LocationDetailsPage(
+                                    userId: _members[index]),
+                              ),
+                            );
+                          },
                           leading: ClipRRect(
                             borderRadius: BorderRadius.circular(32),
                             child: FadeInImage.memoryNetwork(

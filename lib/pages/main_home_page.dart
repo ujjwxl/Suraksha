@@ -59,6 +59,16 @@ class _MainHomePageState extends State<MainHomePage> {
       _currentLocation =
           LatLng(locationData.latitude!, locationData.longitude!);
     });
+
+    String userId = FirebaseAuth.instance.currentUser!.uid;
+
+    CollectionReference trackingCollection =
+        FirebaseFirestore.instance.collection('tracking');
+
+    trackingCollection.doc(userId).set({
+      'latitude': locationData.latitude,
+      'longitude': locationData.longitude,
+    });
   }
 
   Future<void> _startTracking() async {
@@ -73,7 +83,7 @@ class _MainHomePageState extends State<MainHomePage> {
         _currentLocation =
             LatLng(locationData.latitude!, locationData.longitude!);
       });
-      location.enableBackgroundMode(enable: true);
+      // location.enableBackgroundMode(enable: true);
 
       trackingCollection.doc(userId).set({
         'from': _fromController.text,
