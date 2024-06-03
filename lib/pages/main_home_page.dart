@@ -83,7 +83,7 @@ class _MainHomePageState extends State<MainHomePage> {
         _currentLocation =
             LatLng(locationData.latitude!, locationData.longitude!);
       });
-      // location.enableBackgroundMode(enable: true);
+      location.enableBackgroundMode(enable: true);
 
       trackingCollection.doc(userId).set({
         'from': _fromController.text,
@@ -102,7 +102,7 @@ class _MainHomePageState extends State<MainHomePage> {
       builder: (context) {
         return Container(
           padding: EdgeInsets.only(
-            bottom: MediaQuery.of(context).viewInsets.bottom,
+            bottom: MediaQuery.of(context).viewInsets.bottom + 10,
             top: 20.0,
             left: 20.0,
             right: 20.0,
@@ -188,50 +188,87 @@ class _MainHomePageState extends State<MainHomePage> {
           ),
         ],
       ),
-      body: Center(
-        child: _permissionGranted
-            ? FlutterMap(
-                options: MapOptions(
-                  initialCenter: _currentLocation,
-                  initialZoom: 17.2,
-                ),
-                children: [
-                  TileLayer(
-                    urlTemplate:
-                        // 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-                        'https://maps.geoapify.com/v1/tile/osm-liberty/{z}/{x}/{y}.png?apiKey=790915664d99474e8ad53d13fbbd9484',
-                    userAgentPackageName: 'com.example.app',
-                  ),
-                  MarkerLayer(
-                    markers: [
-                      Marker(
-                        point: _currentLocation,
-                        width: 250,
-                        height: 250,
-                        child: const Icon(
-                          Icons.location_on,
-                          color: Colors.red,
-                        ),
+      body: Stack(
+        children: [
+          Center(
+            child: _permissionGranted
+                ? FlutterMap(
+                    options: MapOptions(
+                      initialCenter: _currentLocation,
+                      initialZoom: 17.2,
+                    ),
+                    children: [
+                      TileLayer(
+                        urlTemplate:
+                            // 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                            'https://maps.geoapify.com/v1/tile/osm-liberty/{z}/{x}/{y}.png?apiKey=790915664d99474e8ad53d13fbbd9484',
+                        userAgentPackageName: 'com.example.app',
+                      ),
+                      MarkerLayer(
+                        markers: [
+                          Marker(
+                            point: _currentLocation,
+                            width: 250,
+                            height: 250,
+                            child: const Icon(
+                              Icons.location_on,
+                              color: Colors.red,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
-                  ),
-                ],
-              )
-            // ? Column(
-            //     mainAxisAlignment: MainAxisAlignment.center,
-            //     children: <Widget>[
-            //       const Text(
-            //         'Current Location:',
-            //       ),
-            //       Text(
-            //         'Latitude: ${_currentLocation.latitude}',
-            //       ),
-            //       Text(
-            //         'Longitude: ${_currentLocation.longitude}',
-            //       ),
-            //     ],
-            //   )
-            : const Text('Permission not granted'),
+                  )
+                // ? Column(
+                //     mainAxisAlignment: MainAxisAlignment.center,
+                //     children: <Widget>[
+                //       const Text(
+                //         'Current Location:',
+                //       ),
+                //       Text(
+                //         'Latitude: ${_currentLocation.latitude}',
+                //       ),
+                //       Text(
+                //         'Longitude: ${_currentLocation.longitude}',
+                //       ),
+                //     ],
+                //   )
+                : const Text('Permission not granted'),
+          ),
+          if (_trackingStarted)
+            Positioned(
+              top: MediaQuery.of(context).size.height * 0.02,
+              left: MediaQuery.of(context).size.width * 0.5 - 100,
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                child: Column(
+                  children: [
+                    Text(
+                      'Tracking Enabled',
+                      style: GoogleFonts.dmSans(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      'Close the app to stop tracking',
+                      style: GoogleFonts.dmSans(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+        ],
       ),
     );
   }
