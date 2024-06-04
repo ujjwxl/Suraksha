@@ -47,6 +47,7 @@ dependencies:
   location: ^6.0.2
   flutter_map: ^6.1.0
   timeago: ^3.6.1
+  flutter_countdown_timer: ^4.1.0
 
 dev_dependencies:
   flutter_test:
