@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trackingapp/components/input_field.dart';
+import 'package:trackingapp/pages/incoming_call_page.dart';
 
 class FakeCallPage extends StatefulWidget {
   const FakeCallPage({super.key});
@@ -36,7 +37,12 @@ class _FakeCallPageState extends State<FakeCallPage> {
               _remainingSeconds--;
             } else {
               timer.cancel();
-              Navigator.pushReplacementNamed(context, '/login');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const IncomingCallPage(),
+                ),
+              );
             }
           },
         );
