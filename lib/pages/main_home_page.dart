@@ -62,12 +62,15 @@ class _MainHomePageState extends State<MainHomePage> {
 
     String userId = FirebaseAuth.instance.currentUser!.uid;
 
+    DateTime now = DateTime.now();
+
     CollectionReference trackingCollection =
         FirebaseFirestore.instance.collection('tracking');
 
     trackingCollection.doc(userId).set({
       'latitude': locationData.latitude,
       'longitude': locationData.longitude,
+      'updatedAt': now
     });
   }
 
@@ -85,12 +88,15 @@ class _MainHomePageState extends State<MainHomePage> {
       });
       location.enableBackgroundMode(enable: true);
 
+      DateTime now = DateTime.now();
+
       trackingCollection.doc(userId).set({
         'from': _fromController.text,
         'to': _toController.text,
         'license': _licenseController.text,
         'latitude': locationData.latitude,
         'longitude': locationData.longitude,
+        'updatedAt': now
       });
     });
   }
