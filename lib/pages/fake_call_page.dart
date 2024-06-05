@@ -40,7 +40,9 @@ class _FakeCallPageState extends State<FakeCallPage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const IncomingCallPage(),
+                  builder: (context) => IncomingCallPage(
+                    callerName: _callerNameController.text,
+                  ),
                 ),
               );
             }
