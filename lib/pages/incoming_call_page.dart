@@ -57,7 +57,8 @@ class _IncomingCallPageState extends State<IncomingCallPage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
-            padding: const EdgeInsets.all(32.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 32.0, vertical: 64.0),
             child: Center(
               child: Column(
                 children: [
@@ -78,10 +79,57 @@ class _IncomingCallPageState extends State<IncomingCallPage> {
               ),
             ),
           ),
+          if (_callPicked == true)
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(vertical: 0, horizontal: 48.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      shape: const CircleBorder(),
+                      padding: const EdgeInsets.all(30),
+                      backgroundColor: Colors.grey,
+                    ),
+                    child: const Icon(
+                      Icons.dialpad,
+                      color: Colors.white,
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      shape: const CircleBorder(),
+                      padding: const EdgeInsets.all(30),
+                      backgroundColor: Colors.grey,
+                    ),
+                    child: const Icon(
+                      Icons.mic_off_sharp,
+                      color: Colors.white,
+                    ),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      shape: const CircleBorder(),
+                      padding: const EdgeInsets.all(30),
+                      backgroundColor: Colors.grey,
+                    ),
+                    child: const Icon(
+                      Icons.volume_up,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           Padding(
-            padding: const EdgeInsets.all(32.0),
+            padding:
+                const EdgeInsets.symmetric(horizontal: 32.0, vertical: 64.0),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 ElevatedButton(
                   onPressed: _stopRingtone,
