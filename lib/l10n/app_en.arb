@@ -1,0 +1,27 @@
+{
+    "onboardingOneTitle": "Share your location",
+    "@onboardingOneTitle": {
+        "description": "This line is the first onboarding page's title"
+    },
+    "onboardingTwoTitle": "Send an SOS",
+    "@onboardingTwoTitle": {
+        "description": "This line is the second onboarding page's title"
+    },
+    "onboardingThreeTitle": "Schdeule a Fake Call",
+    "@onboardingThreeTitle": {
+        "description": "This line is the third onboarding page's title"
+    },
+
+    "onboardingOneSubtitle": "while travelling or when in transit",
+    "@onboardingOneSubtitle": {
+        "description": "This line is the first onboarding page's subtitle"
+    },
+    "onboardingTwoSubtitle": "when in an emergency",
+    "@onboardingTwoSubtitle": {
+        "description": "This line is the second onboarding page's subtitle"
+    },
+    "onboardingThreeSubtitle": "to get out of uncomfortable situations",
+    "@onboardingThreeSubtitle": {
+        "description": "This line is the third onboarding page's subtitle"
+    }
+}

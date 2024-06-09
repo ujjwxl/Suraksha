@@ -3,9 +3,12 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:trackingapp/auth/auth.dart';
 import 'package:trackingapp/data/onboarding_data.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:trackingapp/providers/language_provider.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
@@ -33,6 +36,34 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
+
+    String getTitle() {
+      switch (currentIndex) {
+        case 0:
+          return appLocalizations.onboardingOneTitle;
+        case 1:
+          return appLocalizations.onboardingTwoTitle;
+        case 2:
+          return appLocalizations.onboardingThreeTitle;
+        default:
+          return '';
+      }
+    }
+
+    String getSubtitle() {
+      switch (currentIndex) {
+        case 0:
+          return appLocalizations.onboardingOneSubtitle;
+        case 1:
+          return appLocalizations.onboardingTwoSubtitle;
+        case 2:
+          return appLocalizations.onboardingThreeSubtitle;
+        default:
+          return '';
+      }
+    }
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: contentsList[currentIndex].backgroundColor,
@@ -40,6 +71,24 @@ class _OnboardingPageState extends State<OnboardingPage> {
           'Hello',
           style: TextStyle(color: contentsList[currentIndex].backgroundColor),
         ),
+        actions: [
+          DropdownMenu(
+            textStyle: GoogleFonts.dmSans(color: Colors.white),
+            initialSelection:
+                context.watch<LanguageProvider>().selectedLocale.languageCode,
+            onSelected: (value) {
+              context.read<LanguageProvider>().changeLanguage(value as String);
+            },
+            dropdownMenuEntries: LanguageProvider.languages
+                .map(
+                  (language) => DropdownMenuEntry(
+                    value: language['locale'],
+                    label: language['name'],
+                  ),
+                )
+                .toList(),
+          )
+        ],
       ),
       backgroundColor: contentsList[currentIndex].backgroundColor,
       body: Column(
@@ -72,7 +121,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Text(
-                            contentsList[index].title,
+                            // contentsList[index].title,
+                            // appLocalizations.onboardingOneTitle,
+                            getTitle(),
                             style: GoogleFonts.dmSans(
                                 fontSize: 28,
                                 fontWeight: FontWeight.bold,
@@ -82,7 +133,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                             height: 12,
                           ),
                           Text(
-                            contentsList[index].description,
+                            getSubtitle(),
                             style: GoogleFonts.dmSans(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
