@@ -49,6 +49,7 @@ dependencies:
   timeago: ^3.6.1
   flutter_countdown_timer: ^4.1.0
   audioplayers: ^6.0.0
+  shared_preferences: ^2.2.3
 
 dev_dependencies:
   flutter_test:
