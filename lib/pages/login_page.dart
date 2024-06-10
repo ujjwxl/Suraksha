@@ -32,12 +32,13 @@ class _LoginPageState extends State<LoginPage> {
     // final width = MediaQuery.of(context).size.width * 1;
 
     return Scaffold(
-      backgroundColor: const Color(0xFFFFFFE5),
+      // backgroundColor: const Color(0xFFFFFFE5),
+      backgroundColor: const Color(0xffF0CF69),
       body: Stack(
         children: [
           Positioned.fill(
             child: Image.asset(
-              'images/tracking-background-image.jpg',
+              'images/image1.png',
               fit: BoxFit.cover,
               height: height * 0.5,
             ),
@@ -52,7 +53,8 @@ class _LoginPageState extends State<LoginPage> {
                 Container(
                   height: height * 0.5,
                   decoration: const BoxDecoration(
-                    color: Color(0xFFFFFFE5),
+                    // color: Color(0xFFFFFFE5),
+                    color: Colors.white,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(24.0),
                       topRight: Radius.circular(24.0),
@@ -94,19 +96,20 @@ class _LoginPageState extends State<LoginPage> {
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8.0),
                           ),
-                          backgroundColor: const Color(0xFFFFD373),
+                          // backgroundColor: const Color(0xFFFFD373),
+                          backgroundColor: const Color(0xFF1D0C2C),
                           padding: const EdgeInsets.symmetric(
                             horizontal: 60,
                             vertical: 20,
                           ),
                           textStyle: const TextStyle(
-                            fontSize: 20,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
                         child: Text(
                           'LOGIN',
-                          style: GoogleFonts.dmSans(color: Colors.black),
+                          style: GoogleFonts.dmSans(color: Colors.white),
                         ),
                       ),
                       Row(

@@ -20,7 +20,7 @@ class OnboardingPage extends StatefulWidget {
 class _OnboardingPageState extends State<OnboardingPage> {
   PageController? _controller;
   int currentIndex = 0;
-  double percentage = 0.33;
+  double percentage = 0.34;
 
   @override
   void initState() {
@@ -74,6 +74,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
         actions: [
           DropdownMenu(
             textStyle: GoogleFonts.dmSans(color: Colors.white),
+            inputDecorationTheme: const InputDecorationTheme(
+              border: OutlineInputBorder(borderSide: BorderSide.none),
+            ),
             initialSelection:
                 context.watch<LanguageProvider>().selectedLocale.languageCode,
             onSelected: (value) {
