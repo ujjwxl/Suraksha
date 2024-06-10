@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trackingapp/components/input_field.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
@@ -55,6 +56,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     final height = MediaQuery.of(context).size.height * 1;
     // final width = MediaQuery.of(context).size.width * 1;
 
@@ -94,37 +96,38 @@ class _SignUpPageState extends State<SignUpPage> {
                         height: 10,
                       ),
                       Text(
-                        'Journal',
+                        'Tracking',
                         style: GoogleFonts.dmSans(
                           fontSize: 36,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
-                        'Sign Up',
+                        appLocalizations.signupActionText,
                         style: GoogleFonts.dmSans(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       MyInputField(
-                        hintText: 'Name',
+                        hintText: appLocalizations.signupNamePlaceholder,
                         prefixIcon: Icons.person,
                         controller: nameTextController,
                       ),
                       MyInputField(
-                        hintText: 'Email',
+                        hintText: appLocalizations.signupEmailPlaceholder,
                         prefixIcon: Icons.email,
                         controller: emailTextController,
                       ),
                       MyInputField(
-                        hintText: 'Password',
+                        hintText: appLocalizations.signupPasswordPlaceholder,
                         prefixIcon: Icons.lock,
                         controller: passwordTextController,
                         isPassword: true,
                       ),
                       MyInputField(
-                        hintText: 'Confirm Password',
+                        hintText:
+                            appLocalizations.signupConfirmPasswordPlaceholder,
                         prefixIcon: Icons.lock,
                         controller: confirmPassTextController,
                         isPassword: true,
@@ -147,7 +150,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           ),
                         ),
                         child: Text(
-                          'SIGN UP',
+                          appLocalizations.signupButton,
                           style: GoogleFonts.dmSans(color: Colors.white),
                         ),
                       ),
@@ -155,7 +158,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "Already have an account? ",
+                            appLocalizations.signupBottomText,
                             style: GoogleFonts.dmSans(),
                           ),
                           GestureDetector(
@@ -163,7 +166,7 @@ class _SignUpPageState extends State<SignUpPage> {
                               Navigator.pushNamed(context, '/login');
                             },
                             child: Text(
-                              'Login',
+                              appLocalizations.signupBottomTextTwo,
                               style: GoogleFonts.dmSans(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,

@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trackingapp/components/input_field.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -28,6 +29,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     final height = MediaQuery.of(context).size.height * 1;
     // final width = MediaQuery.of(context).size.width * 1;
 
@@ -67,26 +69,26 @@ class _LoginPageState extends State<LoginPage> {
                         height: 10,
                       ),
                       Text(
-                        'Journal',
+                        'Tracking',
                         style: GoogleFonts.dmSans(
                           fontSize: 36,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
-                        'Login here',
+                        appLocalizations.loginActionText,
                         style: GoogleFonts.dmSans(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       MyInputField(
-                        hintText: 'Enter your email',
+                        hintText: appLocalizations.loginEmailPlaceholder,
                         prefixIcon: Icons.email,
                         controller: emailController,
                       ),
                       MyInputField(
-                        hintText: 'Enter your password',
+                        hintText: appLocalizations.loginPasswordPlaceholder,
                         prefixIcon: Icons.lock,
                         controller: passwordController,
                       ),
@@ -108,7 +110,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                         child: Text(
-                          'LOGIN',
+                          appLocalizations.loginButton,
                           style: GoogleFonts.dmSans(color: Colors.white),
                         ),
                       ),
@@ -116,7 +118,7 @@ class _LoginPageState extends State<LoginPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "Don't have an account? ",
+                            appLocalizations.loginBottomText,
                             style: GoogleFonts.dmSans(),
                           ),
                           GestureDetector(
@@ -124,7 +126,7 @@ class _LoginPageState extends State<LoginPage> {
                               Navigator.pushNamed(context, '/signup');
                             },
                             child: Text(
-                              'Sign up',
+                              appLocalizations.loginBottomTextTwo,
                               style: GoogleFonts.dmSans(
                                 fontSize: 14,
                                 fontWeight: FontWeight.bold,

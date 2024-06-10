@@ -23,5 +23,22 @@
     "onboardingThreeSubtitle": "to get out of uncomfortable situations",
     "@onboardingThreeSubtitle": {
         "description": "This line is the third onboarding page's subtitle"
-    }
+    },
+
+
+    "loginActionText": "Login here",
+    "loginEmailPlaceholder": "Enter your email",
+    "loginPasswordPlaceholder": "Enter your password",
+    "loginButton": "LOGIN",
+    "loginBottomText": "Don't have an account?\u00A0",
+    "loginBottomTextTwo": "Sign up",
+
+    "signupActionText": "Sign up",
+    "signupNamePlaceholder": "Name",
+    "signupEmailPlaceholder": "Email",
+    "signupPasswordPlaceholder": "Password",
+    "signupConfirmPasswordPlaceholder": "Confirm Password",
+    "signupButton": "SIGN UP",
+    "signupBottomText": "Already have an account?\u00A0",
+    "signupBottomTextTwo": "Login"
 }

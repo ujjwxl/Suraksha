@@ -5,5 +5,21 @@
 
     "onboardingOneSubtitle": "जब आप यात्रा कर रहे हों",
     "onboardingTwoSubtitle": "जब आप आपात्कालीन स्थिति में हों",
-    "onboardingThreeSubtitle": "परेशान करने वाली स्थितियों से बाहर निकलने के लिए"
+    "onboardingThreeSubtitle": "परेशान करने वाली स्थितियों से बाहर निकलने के लिए",
+
+    "loginActionText": "यहाँ लॉगिन करें",
+    "loginEmailPlaceholder": "अपना ईमेल दर्ज करें",
+    "loginPasswordPlaceholder": "अपना पासवर्ड दर्ज करें",
+    "loginButton": "लॉगिन करें",
+    "loginBottomText": "खाता नहीं है?\u00A0",
+    "loginBottomTextTwo": "साइन अप करें",
+
+    "signupActionText": "साइन अप करें",
+    "signupNamePlaceholder": "नाम",
+    "signupEmailPlaceholder": "ईमेल",
+    "signupPasswordPlaceholder": "पासवर्ड",
+    "signupConfirmPasswordPlaceholder": "पासवर्ड की पुष्टि करें",
+    "signupButton": "साइन अप करें",
+    "signupBottomText": "क्या आपके पास पहले से ही खाता है?\u00A0",
+    "signupBottomTextTwo": "लॉगिन करें"
 }
