@@ -4,6 +4,7 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:location/location.dart';
 import 'package:latlong2/latlong.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class MainHomePage extends StatefulWidget {
@@ -101,7 +102,8 @@ class _MainHomePageState extends State<MainHomePage> {
     });
   }
 
-  void _showModalBottomSheet() {
+  void _showModalBottomSheet(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     showModalBottomSheet(
       isScrollControlled: true,
       context: context,
@@ -117,7 +119,7 @@ class _MainHomePageState extends State<MainHomePage> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'Summary',
+                appLocalizations.homeTrackingModalHeading,
                 style: GoogleFonts.dmSans(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -127,7 +129,7 @@ class _MainHomePageState extends State<MainHomePage> {
                 style: GoogleFonts.dmSans(fontSize: 16),
                 controller: _fromController,
                 decoration: InputDecoration(
-                  labelText: 'From',
+                  labelText: appLocalizations.homeTrackingFrom,
                   labelStyle: GoogleFonts.dmSans(fontSize: 14),
                 ),
               ),
@@ -135,7 +137,7 @@ class _MainHomePageState extends State<MainHomePage> {
                 style: GoogleFonts.dmSans(fontSize: 16),
                 controller: _toController,
                 decoration: InputDecoration(
-                  labelText: 'To',
+                  labelText: appLocalizations.homeTrackingTo,
                   labelStyle: GoogleFonts.dmSans(fontSize: 14),
                 ),
               ),
@@ -143,7 +145,7 @@ class _MainHomePageState extends State<MainHomePage> {
                 style: GoogleFonts.dmSans(fontSize: 16),
                 controller: _licenseController,
                 decoration: InputDecoration(
-                  labelText: 'License Number',
+                  labelText: appLocalizations.homeTrackingLicenseNumber,
                   labelStyle: GoogleFonts.dmSans(fontSize: 14),
                 ),
               ),
@@ -160,7 +162,7 @@ class _MainHomePageState extends State<MainHomePage> {
                   backgroundColor: MaterialStateProperty.all(Color(0xFF1D0C2C)),
                   padding: MaterialStateProperty.all(EdgeInsets.all(20.0)),
                 ),
-                child: Text('Start Tracking',
+                child: Text(appLocalizations.homeTrackingButton,
                     style: GoogleFonts.dmSans(
                       fontSize: 14,
                       color: Colors.white,
@@ -175,10 +177,11 @@ class _MainHomePageState extends State<MainHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Home',
+          appLocalizations.homeAppBarTitle,
           style: GoogleFonts.dmSans(
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -188,7 +191,7 @@ class _MainHomePageState extends State<MainHomePage> {
         actions: [
           IconButton(
             onPressed: () {
-              _showModalBottomSheet();
+              _showModalBottomSheet(context);
             },
             icon: const Icon(Icons.navigation_outlined),
           ),
@@ -255,7 +258,7 @@ class _MainHomePageState extends State<MainHomePage> {
                 child: Column(
                   children: [
                     Text(
-                      'Tracking Enabled',
+                      appLocalizations.homeTrackingEnabledHeading,
                       style: GoogleFonts.dmSans(
                         color: Colors.white,
                         fontSize: 16,
@@ -263,7 +266,7 @@ class _MainHomePageState extends State<MainHomePage> {
                       ),
                     ),
                     Text(
-                      'Close the app to stop tracking',
+                      appLocalizations.homeTrackingEnabledSubtitle,
                       style: GoogleFonts.dmSans(
                         color: Colors.white,
                         fontSize: 12,

@@ -21,5 +21,15 @@
     "signupConfirmPasswordPlaceholder": "पासवर्ड की पुष्टि करें",
     "signupButton": "साइन अप करें",
     "signupBottomText": "क्या आपके पास पहले से ही खाता है?\u00A0",
-    "signupBottomTextTwo": "लॉगिन करें"
+    "signupBottomTextTwo": "लॉगिन करें",
+
+    "homeAppBarTitle": "होम",
+    "homeTrackingModalHeading": "सारांश",
+    "homeTrackingFrom": "कहाँ से",
+    "homeTrackingTo": "कहाँ तक",
+    "homeTrackingLicenseNumber": "लाइसेंस नंबर",
+    "homeTrackingButton": "ट्रैकिंग शुरू करें",
+
+    "homeTrackingEnabledHeading": "ट्रैकिंग सक्रिय है",
+    "homeTrackingEnabledSubtitle": "ट्रैकिंग बंद करने के लिए ऐप बंद करें"
 }

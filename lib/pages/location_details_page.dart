@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:latlong2/latlong.dart';
@@ -50,6 +51,10 @@ class LocationDetailsPage extends StatelessWidget {
 
           final latitude = data?['latitude'];
           final longitude = data?['longitude'];
+          final from = data?['from'];
+          final to = data?['to'];
+          final licenseNumber = data?['license'];
+
           final lastUpdatedTimestamp =
               (data?['updatedAt'] as Timestamp?)?.toDate();
 
@@ -103,6 +108,53 @@ class LocationDetailsPage extends StatelessWidget {
                     style: GoogleFonts.dmSans(
                       color: Colors.white,
                       fontSize: 16,
+                    ),
+                  ),
+                ),
+              ),
+              Visibility(
+                visible: from != null &&
+                    from.isNotEmpty &&
+                    to != null &&
+                    to.isNotEmpty &&
+                    licenseNumber != null &&
+                    licenseNumber.isNotEmpty,
+                child: Positioned(
+                  // top: MediaQuery.of(context).size.height * 0.02,
+                  bottom: MediaQuery.of(context).size.height * 0.02,
+                  left: 20,
+                  child: Container(
+                    padding: EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.7),
+                      // color: Color(0xFF1D0C2C),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Last Updated Trip',
+                          style: GoogleFonts.dmSans(
+                            color: Colors.white,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Text(
+                          'From $from to $to',
+                          style: GoogleFonts.dmSans(
+                            color: Colors.white,
+                            fontSize: 14,
+                          ),
+                        ),
+                        Text(
+                          'Vehicle No : $licenseNumber',
+                          style: GoogleFonts.dmSans(
+                            color: Colors.white,
+                            fontSize: 14,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),

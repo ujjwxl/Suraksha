@@ -73,6 +73,10 @@ class _OnboardingPageState extends State<OnboardingPage> {
         ),
         actions: [
           DropdownMenu(
+            leadingIcon: const Icon(
+              Icons.language,
+              color: Colors.white,
+            ),
             textStyle: GoogleFonts.dmSans(color: Colors.white),
             inputDecorationTheme: const InputDecorationTheme(
               border: OutlineInputBorder(borderSide: BorderSide.none),

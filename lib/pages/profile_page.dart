@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:trackingapp/pages/change_language_page.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -201,6 +202,38 @@ class _ProfilePageState extends State<ProfilePage> {
                             ],
                           ),
                         ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16.0, vertical: 4.0),
+                        child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                color: Colors.grey[300] ?? Colors.transparent,
+                              ),
+                            ),
+                            child: ListTile(
+                              title: Text(
+                                'Change Language',
+                                style: GoogleFonts.dmSans(
+                                  fontSize: 16,
+                                  color: Colors.black,
+                                ),
+                              ),
+                              leading: const Icon(
+                                Icons.settings_outlined,
+                                color: Colors.black,
+                              ),
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => ChangeLanguagePage(),
+                                  ),
+                                );
+                              },
+                            )),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(16.0),

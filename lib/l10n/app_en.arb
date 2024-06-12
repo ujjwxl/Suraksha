@@ -40,5 +40,15 @@
     "signupConfirmPasswordPlaceholder": "Confirm Password",
     "signupButton": "SIGN UP",
     "signupBottomText": "Already have an account?\u00A0",
-    "signupBottomTextTwo": "Login"
+    "signupBottomTextTwo": "Login",
+
+    "homeAppBarTitle": "Home",
+    "homeTrackingModalHeading": "Summary",
+    "homeTrackingFrom": "From",
+    "homeTrackingTo": "To",
+    "homeTrackingLicenseNumber": "License Number",
+    "homeTrackingButton": "Start Tracking",
+
+    "homeTrackingEnabledHeading": "Tracking Enabled",
+    "homeTrackingEnabledSubtitle": "Close the app to stop tracking"
 }
