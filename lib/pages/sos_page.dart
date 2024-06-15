@@ -4,13 +4,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:location/location.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:trackingapp/models/sos_model.dart';
 import 'package:trackingapp/pages/all_sos_page.dart';
-// import 'package:slide_to_act/slide_to_act.dart';
 
 class SOSPage extends StatefulWidget {
   const SOSPage({super.key});
@@ -25,6 +23,7 @@ class _SOSPageState extends State<SOSPage> {
   bool _isTimerRunning = false;
   int _timerCount = 3;
   late Timer _timer;
+  Color _buttonColor = const Color(0xffD00606);
 
   Future<void> _getLocation() async {
     Location location = Location();
@@ -101,6 +100,7 @@ class _SOSPageState extends State<SOSPage> {
     setState(() {
       _isTimerRunning = false;
       _timerCount = 3;
+      _buttonColor = const Color(0xffD00606);
     });
   }
 
@@ -165,17 +165,21 @@ class _SOSPageState extends State<SOSPage> {
             onTap: () {
               if (!_isTimerRunning) {
                 startTimer();
+                setState(() {
+                  _buttonColor = Colors.red;
+                });
               } else {
                 stopTimer();
               }
             },
             child: Center(
-              child: Container(
-                width: 200,
-                height: 200,
-                decoration: const BoxDecoration(
+              child: AnimatedContainer(
+                duration: Duration(milliseconds: 300),
+                width: _isTimerRunning ? 150 : 200,
+                height: _isTimerRunning ? 150 : 200,
+                decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Color(0xffD00606),
+                  color: _buttonColor,
                 ),
                 child: Center(
                   child: Text(
