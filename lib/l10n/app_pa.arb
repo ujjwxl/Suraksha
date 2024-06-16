@@ -1,0 +1,81 @@
+{
+  "@@locale": "pa",
+  
+  "onboardingOneTitle": "ਆਪਣਾ ਸਥਾਨ ਸਾਂਝਾ ਕਰੋ",
+  "onboardingTwoTitle": "ਐਸ ਓ ਐਸ ਭੇਜੋ",
+  "onboardingThreeTitle": "ਝੂਠਾ ਕਾਲ ਅਨੁਮਤੀ ਲਓ",
+
+  "onboardingOneSubtitle": "ਯਾਤਰਾ ਕਰਦੇ ਸਮੇਂ ਜਾਂ ਸੜਕ 'ਤੇ",
+  "onboardingTwoSubtitle": "ਆਪਾਤਕਾਲ ਵਿੱਚ",
+  "onboardingThreeSubtitle": "ਅਸੰਭਾਵ ਸਥਿਤੀਆਂ ਤੋਂ ਬਾਹਰ ਨਿਕਲਣ ਲਈ",
+
+  "loginActionText": "ਇੱਥੇ ਲਾਗਇਨ ਕਰੋ",
+  "loginEmailPlaceholder": "ਆਪਣਾ ਈਮੇਲ ਦਰਜ ਕਰੋ",
+  "loginPasswordPlaceholder": "ਆਪਣਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰੋ",
+  "loginButton": "ਲਾਗਇਨ",
+  "loginBottomText": "ਅਕਾਉਂਟ ਨਹੀਂ ਹੈ?\u00A0",
+  "loginBottomTextTwo": "ਸਾਈਨ ਅਪ",
+
+  "signupActionText": "ਸਾਈਨ ਅਪ ਕਰੋ",
+  "signupNamePlaceholder": "ਨਾਂ",
+  "signupEmailPlaceholder": "ਈਮੇਲ",
+  "signupPasswordPlaceholder": "ਪਾਸਵਰਡ",
+  "signupConfirmPasswordPlaceholder": "ਪਾਸਵਰਡ ਪੁਸ਼ਟੀ ਕਰੋ",
+  "signupButton": "ਸਾਈਨ ਅਪ",
+  "signupBottomText": "ਪਹਿਲਾਂ ਹੀ ਕੋਈ ਅਕਾਉਂਟ ਹੈ?\u00A0",
+  "signupBottomTextTwo": "ਲਾਗਇਨ",
+
+  "homeAppBarTitle": "ਹੋਮ",
+  "homeTrackingModalHeading": "ਸੰਖੇਪ",
+  "homeTrackingFrom": "ਤੋਂ",
+  "homeTrackingTo": "ਤੱਕ",
+  "homeTrackingLicenseNumber": "ਲਾਇਸੰਸ ਨੰਬਰ",
+  "homeTrackingButton": "ਟ੍ਰੈਕਿੰਗ ਸ਼ੁਰੂ ਕਰੋ",
+
+  "homeTrackingEnabledHeading": "ਟ੍ਰੈਕਿੰਗ ਸਮਰੱਥ",
+  "homeTrackingEnabledSubtitle": "ਟ੍ਰੈਕਿੰਗ ਬੰਦ ਕਰਨ ਲਈ ਐਪ ਨੂੰ ਬੰਦ ਕਰੋ",
+
+  "groupSnackBarSuccess": "ਸਭੋਂ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ ਹੈ!",
+  "groupSnackBarError": "ਸਭੋਂ ਨੂੰ ਸ਼ਾਮਲ ਕਰਨ ਦੇ ਕਾਰਨ ਗਲਤੀ ਹੋਈ ਹੈ!",
+  "groupAppBarTitle": "ਤੁਹਾਡਾ ਗਰੁੱਪ",
+  "groupUserSearchHintText": "ਯੂਜ਼ਰ ਆਈਡੀ ਦੁਆਰਾ ਖੋਜੋ",
+  "groupMembersTitle": "ਮੈਂਬਰ",
+
+  "sosAppbarTitle": "ਏਸਓਐਸ",
+  "sosActionText": "ਤੁਹਾਡੇ ਸਭੀ ਸਦਸਿਯਤਾਂ ਨੂੰ ਆਪਣੇ ਸਥਾਨ ਦੀ ਸੂਚਨਾ ਭੇਜੀ ਜਾਵੇਗੀ",
+  "sosSendingText": "ਸੂਚਨਾ ਭੇਜਣ 'ਚ",
+  "sosCancelText": "ਰੱਦ ਕਰਨ ਲਈ ਮੁੜ ਦਬਾਓ",
+
+  "fakeCallAppBarTitle": "ਝੂਠਾ ਕਾਲ",
+  "fakeCallActionText": "ਮੈਨੂੰ ਕਾਲ ਕਰੋ",
+  "fakeCallSeconds": "ਸਕਿੰਟ",
+  "fakeCallHintText": "ਕਾਲਰ ਦਾ ਨਾਮ ਸ਼ਾਮਿਲ ਕਰੋ",
+  "fakeCallCallMeText": "ਮੈਨੂੰ ਕਾਲ ਕਰੋ",
+  "fakeCallCallingIn": "ਕਾਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ",
+  "fakeCallCancelText": "ਰੱਦ ਕਰੋ",
+
+  "profileAppBarText": "ਤੁਹਾਡਾ ਪ੍ਰੋਫਾਈਲ",
+  "profileSnackBarText": "ਪਾਠ ਕਲਿੱਪਬੋਰਡ 'ਤੇ ਕਾਪੀ ਕੀਤਾ ਗਿਆ!",
+  "profileChangeLanguageText": "ਭਾਸ਼ਾ ਬਦਲੋ",
+  "profileSignOutText": "ਸਾਈਨ ਆਉਟ",
+
+  "locationDetailsAppBarText": "ਸਥਾਨ ਵੇਰਵਾ",
+  "locationLastUpdatedText": "ਆਖਰੀ ਅਪਡੇਟ",
+  "locationLastUpdatedTrip": "ਆਖਰੀ ਅਪਡੇਟ ਯਾਤਰਾ",
+  "locationFrom": "ਤੋਂ",
+  "locationTo": "ਨੂੰ",
+  "locationVehicleNo": "ਵਾਹਨ ਨੰਬਰ",
+
+  "allSOSAppBarText": "ਸਭ ਏਸਓਐਸ",
+
+  "sosDetailsAppBarTitle": "ਏਸਓਐਸ ਵੇਰਵਾ",
+
+  "changeLanguageAppBarText": "ਭਾਸ਼ਾ ਬਦਲੋ",
+  "changeLanguagePreferredLangugage": "ਆਪਣੀ ਪਸੰਦੀਦਾ ਭਾਸ਼ਾ ਚੁਣੋ",
+
+  "bottomNavigationHome": "ਘਰ",
+  "bottomNavigationMyGroup": "ਮੇਰਾ ਗਰੁੱਪ",
+  "bottomNavigationSOS": "ਐਸਓਐਸ",
+  "bottomNavigationFakeCall": "ਝੂਠੀ ਕਾਲ",
+  "bottomNavigationProfile": "ਪ੍ਰੋਫਾਈਲ"
+}

@@ -1,0 +1,81 @@
+{
+  "@@locale": "te",
+  
+  "onboardingOneTitle": "మీ స్థానాన్ని షేర్ చేయండి",
+  "onboardingTwoTitle": "ఎస్ ఒ ఎస్ పంపండి",
+  "onboardingThreeTitle": "నకలు కాల్ షెడ్యూల్ చేయండి",
+
+  "onboardingOneSubtitle": "ప్రయాణించేందుకు లేదా మరణానికి ఉన్నప్పుడు",
+  "onboardingTwoSubtitle": "అత్యవసర సమయంలో",
+  "onboardingThreeSubtitle": "అసహనీయ సందర్భాల్లో నుండి వెళ్ళడానికి",
+
+  "loginActionText": "ఇక్కడ లాగిన్ చేయండి",
+  "loginEmailPlaceholder": "మీ ఇమెయిల్ నమోదు చేయండి",
+  "loginPasswordPlaceholder": "మీ పాస్‌వర్డ్ నమోదు చేయండి",
+  "loginButton": "లాగిన్",
+  "loginBottomText": "ఖాతా లేదా?\u00A0",
+  "loginBottomTextTwo": "సైన్ అప్",
+
+  "signupActionText": "సైన్ అప్ చేయండి",
+  "signupNamePlaceholder": "పేరు",
+  "signupEmailPlaceholder": "ఇమెయిల్",
+  "signupPasswordPlaceholder": "పాస్‌వర్డ్",
+  "signupConfirmPasswordPlaceholder": "పాస్‌వర్డ్ నిర్ధారించండి",
+  "signupButton": "సైన్ అప్",
+  "signupBottomText": "ఖాతా ఉందా?\u00A0",
+  "signupBottomTextTwo": "లాగిన్",
+
+  "homeAppBarTitle": "హోమ్",
+  "homeTrackingModalHeading": "సారాంశం",
+  "homeTrackingFrom": "నుండి",
+  "homeTrackingTo": "వరకు",
+  "homeTrackingLicenseNumber": "లైసెన్స్ సంఖ్య",
+  "homeTrackingButton": "ట్రాకింగ్ ప్రారంభించు",
+
+  "homeTrackingEnabledHeading": "ట్రాకింగ్ ప్రారంభం చేయబడింది",
+  "homeTrackingEnabledSubtitle": "ట్రాకింగ్ ఆఫ్ చేయడానికి యాప్‌ను మూసివేయండి",
+
+  "groupSnackBarSuccess": "సభ్యులు విజయవంతంగా జోడించబడ్డారు!",
+  "groupSnackBarError": "సభ్యులను జోడించడం సాధ్యపడలేదు!",
+  "groupAppBarTitle": "మీ గుంపు",
+  "groupUserSearchHintText": "వాడుకరి ID ద్వారా వెతకండి",
+  "groupMembersTitle": "సభ్యులు",
+
+  "sosAppbarTitle": "ఎస్ ఒ ఎస్",
+  "sosActionText": "మీ స్థానంతో మీ అంగస్తులకు హెచ్చరిక పంపబడుతుంది",
+  "sosSendingText": "హెచ్చరిక పంపబడుతుంది",
+  "sosCancelText": "రద్దు చేయడానికి మళ్ళీ నొక్కండి",
+
+  "fakeCallAppBarTitle": "నకలు కాల్",
+  "fakeCallActionText": "నాకు కాల్ చేయండి",
+  "fakeCallSeconds": "సెకన్లు",
+  "fakeCallHintText": "కాలర్ పేరు చేర్చండి",
+  "fakeCallCallMeText": "నాకు కాల్ చేయండి",
+  "fakeCallCallingIn": "కాల్ చేస్తోంది",
+  "fakeCallCancelText": "రద్దు చేయండి",
+
+  "profileAppBarText": "మీ ప్రొఫైల్",
+  "profileSnackBarText": "టెక్స్ట్ క్లిప్‌బోర్డ్‌కు కాపీ చేయబడింది!",
+  "profileChangeLanguageText": "భాష మార్చు",
+  "profileSignOutText": "లాగ్ ఔట్",
+
+  "locationDetailsAppBarText": "స్థాన వివరాలు",
+  "locationLastUpdatedText": "చివరికి నవీకరించబడింది",
+  "locationLastUpdatedTrip": "చివరికి నవీకరించబడింది ప్రయాణం",
+  "locationFrom": "నుండి",
+  "locationTo": "వరకు",
+  "locationVehicleNo": "వాహన సంఖ్య",
+
+  "allSOSAppBarText": "అన్ని ఎస్ ఒ ఎస్",
+
+  "sosDetailsAppBarTitle": "ఎస్ ఒ ఎస్ వివరాలు",
+
+  "changeLanguageAppBarText": "భాష మార్చు",
+  "changeLanguagePreferredLangugage": "మీ ఇష్టమైన భాషను ఎంచుకో",
+
+  "bottomNavigationHome": "హోమ్",
+  "bottomNavigationMyGroup": "నా గుంపు",
+  "bottomNavigationSOS": "ఎస్ఒఎస్",
+  "bottomNavigationFakeCall": "నకలు కాల్",
+  "bottomNavigationProfile": "ప్రొఫైల్"
+}

@@ -10,7 +10,47 @@ class LanguageProvider extends ChangeNotifier {
     {
       'name': 'हिंदी',
       'locale': 'hi',
-    }
+    },
+    {
+      'name': 'தமிழ்',
+      'locale': 'ta',
+    },
+    {
+      'name': 'বাংলা',
+      'locale': 'bn',
+    },
+    {
+      'name': 'ગુજરાતી',
+      'locale': 'gu',
+    },
+    {
+      'name': 'ಕನ್ನಡ',
+      'locale': 'kn',
+    },
+    {
+      'name': 'മലയാളം',
+      'locale': 'ml',
+    },
+    {
+      'name': 'मराठी',
+      'locale': 'mr',
+    },
+    {
+      'name': 'ਪੰਜਾਬੀ',
+      'locale': 'pa',
+    },
+    {
+      'name': 'తెలుగు',
+      'locale': 'te',
+    },
+    {
+      'name': 'ଓଡ଼ିଆ',
+      'locale': 'or',
+    },
+    {
+      'name': 'اردو',
+      'locale': 'ur',
+    },
   ];
 
   Locale selectedLocale = const Locale('en');

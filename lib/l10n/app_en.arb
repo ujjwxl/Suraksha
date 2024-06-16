@@ -1,30 +1,11 @@
 {
-    "onboardingOneTitle": "Share your location",
-    "@onboardingOneTitle": {
-        "description": "This line is the first onboarding page's title"
-    },
-    "onboardingTwoTitle": "Send an SOS",
-    "@onboardingTwoTitle": {
-        "description": "This line is the second onboarding page's title"
-    },
+    "onboardingOneTitle": "Share your location", 
+    "onboardingTwoTitle": "Send an SOS", 
     "onboardingThreeTitle": "Schdeule a Fake Call",
-    "@onboardingThreeTitle": {
-        "description": "This line is the third onboarding page's title"
-    },
 
     "onboardingOneSubtitle": "while travelling or when in transit",
-    "@onboardingOneSubtitle": {
-        "description": "This line is the first onboarding page's subtitle"
-    },
     "onboardingTwoSubtitle": "when in an emergency",
-    "@onboardingTwoSubtitle": {
-        "description": "This line is the second onboarding page's subtitle"
-    },
     "onboardingThreeSubtitle": "to get out of uncomfortable situations",
-    "@onboardingThreeSubtitle": {
-        "description": "This line is the third onboarding page's subtitle"
-    },
-
 
     "loginActionText": "Login here",
     "loginEmailPlaceholder": "Enter your email",
@@ -50,5 +31,49 @@
     "homeTrackingButton": "Start Tracking",
 
     "homeTrackingEnabledHeading": "Tracking Enabled",
-    "homeTrackingEnabledSubtitle": "Close the app to stop tracking"
+    "homeTrackingEnabledSubtitle": "Close the app to stop tracking",
+
+    "groupSnackBarSuccess": "Member added successfully!",
+    "groupSnackBarError": "Member could not be added!",
+    "groupAppBarTitle": "Your Group",
+    "groupUserSearchHintText": "Search a user by User ID",
+    "groupMembersTitle": "Members",
+
+    "sosAppbarTitle": "SOS",
+    "sosActionText": "An alert will be sent to your members with your location",
+    "sosSendingText": "Alert sending in",
+    "sosCancelText": "Press again to CANCEL",
+
+    "fakeCallAppBarTitle": "Fake Call",
+    "fakeCallActionText": "Call me in",
+    "fakeCallSeconds": "sec",
+    "fakeCallHintText": "Add a caller name",
+    "fakeCallCallMeText": "Call Me",
+    "fakeCallCallingIn": "Calling in",
+    "fakeCallCancelText": "Cancel",
+
+    "profileAppBarText": "Your Profile",
+    "profileSnackBarText": "Text copied to clipboard!",
+    "profileChangeLanguageText": "Change Language",
+    "profileSignOutText": "Sign Out",
+
+    "locationDetailsAppBarText": "Location Details",
+    "locationLastUpdatedText": "Last updated",
+    "locationLastUpdatedTrip": "Last Updated Trip",
+    "locationFrom": "From",
+    "locationTo": "to",
+    "locationVehicleNo": "Vehicle No",
+
+    "allSOSAppBarText": "All SOS",
+
+    "sosDetailsAppBarTitle": "SOS Details",
+
+    "changeLanguageAppBarText": "Change Language",
+    "changeLanguagePreferredLangugage": "Choose your preferred language",
+
+    "bottomNavigationHome": "Home",
+    "bottomNavigationMyGroup": "My Group",
+    "bottomNavigationSOS": "SOS",
+    "bottomNavigationFakeCall": "Fake Call",
+    "bottomNavigationProfile": "Profile"
 }

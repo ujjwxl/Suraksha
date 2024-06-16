@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trackingapp/pages/location_details_page.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class GroupPage extends StatefulWidget {
@@ -32,7 +33,8 @@ class _GroupPageState extends State<GroupPage> {
     }
   }
 
-  void _addUserToGroup() async {
+  void _addUserToGroup(BuildContext context) async {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     try {
       final String myUserId = FirebaseAuth.instance.currentUser!.uid;
       final String shownUserId = _userSnapshot!.id;
@@ -54,15 +56,15 @@ class _GroupPageState extends State<GroupPage> {
       _fetchGroupMembers();
 
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Member added successfully!'),
+        SnackBar(
+          content: Text(appLocalizations.groupSnackBarSuccess),
         ),
       );
     } catch (e) {
       print(e);
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Member could not be added!'),
+        SnackBar(
+          content: Text(appLocalizations.groupSnackBarError),
         ),
       );
     }
@@ -88,10 +90,12 @@ class _GroupPageState extends State<GroupPage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Your Group',
+          appLocalizations.groupAppBarTitle,
           style: GoogleFonts.dmSans(
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -104,7 +108,7 @@ class _GroupPageState extends State<GroupPage> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: SearchBar(
-              hintText: 'Search a user by User ID',
+              hintText: appLocalizations.groupUserSearchHintText,
               onSubmitted: (value) {
                 _searchUser(value);
               },
@@ -162,7 +166,9 @@ class _GroupPageState extends State<GroupPage> {
                           ],
                         ),
                         OutlinedButton(
-                          onPressed: _addUserToGroup,
+                          onPressed: () {
+                            _addUserToGroup(context);
+                          },
                           child: const Icon(Icons.group_add),
                         )
                       ],
@@ -172,7 +178,7 @@ class _GroupPageState extends State<GroupPage> {
               ),
             ),
           Text(
-            'Members',
+            appLocalizations.groupMembersTitle,
             style: GoogleFonts.dmSans(
               fontSize: 20,
               fontWeight: FontWeight.bold,

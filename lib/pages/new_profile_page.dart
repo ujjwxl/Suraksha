@@ -13,6 +13,7 @@ import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:trackingapp/pages/change_language_page.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 class NewProfilePage extends StatefulWidget {
@@ -79,6 +80,7 @@ class _NewProfilePageState extends State<NewProfilePage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     User? user = FirebaseAuth.instance.currentUser;
     if (user != null) {
       String userId = user.uid;
@@ -86,7 +88,7 @@ class _NewProfilePageState extends State<NewProfilePage> {
       return Scaffold(
         appBar: AppBar(
           title: Text(
-            'Your Profile',
+            appLocalizations.profileAppBarText,
             style: GoogleFonts.dmSans(
               fontSize: 22,
               fontWeight: FontWeight.bold,
@@ -185,9 +187,9 @@ class _NewProfilePageState extends State<NewProfilePage> {
                                             text: '${userData['userId']}'));
                                         ScaffoldMessenger.of(context)
                                             .showSnackBar(
-                                          const SnackBar(
-                                            content: Text(
-                                                'Text copied to clipboard!'),
+                                          SnackBar(
+                                            content: Text(appLocalizations
+                                                .profileSnackBarText),
                                           ),
                                         );
                                       },
@@ -215,7 +217,7 @@ class _NewProfilePageState extends State<NewProfilePage> {
                           ),
                           child: ListTile(
                             title: Text(
-                              'Change Language',
+                              appLocalizations.profileChangeLanguageText,
                               style: GoogleFonts.dmSans(
                                 fontSize: 16,
                                 color: Colors.black,
@@ -247,7 +249,7 @@ class _NewProfilePageState extends State<NewProfilePage> {
                           ),
                           child: ListTile(
                             title: Text(
-                              'Sign Out',
+                              appLocalizations.profileSignOutText,
                               style: GoogleFonts.dmSans(
                                 fontSize: 16,
                                 color: Colors.red,

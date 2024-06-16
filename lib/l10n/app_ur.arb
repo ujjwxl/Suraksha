@@ -1,0 +1,81 @@
+{
+  "@@locale": "ur",
+  
+  "onboardingOneTitle": "اپنی جگہ شیئر کریں",
+  "onboardingTwoTitle": "ایس او ایس بھیجیں",
+  "onboardingThreeTitle": "جعلی کال کا شیڈول کریں",
+
+  "onboardingOneSubtitle": "سفر کرتے ہوئے یا اس وقت جب سفر کر رہے ہوں",
+  "onboardingTwoSubtitle": "طارقینی وقت میں",
+  "onboardingThreeSubtitle": "ناکامی کی صورت میں نکلنے کے لیے",
+
+  "loginActionText": "یہاں لاگ ان کریں",
+  "loginEmailPlaceholder": "اپنا ای میل درج کریں",
+  "loginPasswordPlaceholder": "اپنا پاس ورڈ درج کریں",
+  "loginButton": "لاگ ان",
+  "loginBottomText": "اکاؤنٹ نہیں ہے؟\u00A0",
+  "loginBottomTextTwo": "سائن اپ کریں",
+
+  "signupActionText": "سائن اپ کریں",
+  "signupNamePlaceholder": "نام",
+  "signupEmailPlaceholder": "ای میل",
+  "signupPasswordPlaceholder": "پاس ورڈ",
+  "signupConfirmPasswordPlaceholder": "پاس ورڈ کی تصدیق کریں",
+  "signupButton": "سائن اپ",
+  "signupBottomText": "پہلے سے اکاؤنٹ ہے؟\u00A0",
+  "signupBottomTextTwo": "لاگ ان کریں",
+
+  "homeAppBarTitle": "ہوم",
+  "homeTrackingModalHeading": "خلاصہ",
+  "homeTrackingFrom": "سے",
+  "homeTrackingTo": "تک",
+  "homeTrackingLicenseNumber": "لائسنس نمبر",
+  "homeTrackingButton": "ٹریکنگ شروع کریں",
+
+  "homeTrackingEnabledHeading": "ٹریکنگ فعال ہے",
+  "homeTrackingEnabledSubtitle": "ٹریکنگ بند کرنے کے لیے ایپ بند کریں",
+
+  "groupSnackBarSuccess": "رکن کامیابی سے شامل ہوا!",
+  "groupSnackBarError": "رکن شامل نہیں کیا جا سکا!",
+  "groupAppBarTitle": "آپ کا گروپ",
+  "groupUserSearchHintText": "صارف آئی ڈی سے تلاش کریں",
+  "groupMembersTitle": "رکن",
+
+  "sosAppbarTitle": "ایس او ایس",
+  "sosActionText": "آپ کی جگہ کے ساتھ ایک الرٹ آپ کے رکن کو بھیجا جائے گا",
+  "sosSendingText": "الرٹ بھیجا جا رہا ہے",
+  "sosCancelText": "منسوخ کرنے کے لیے دوبارہ دبائیں",
+
+  "fakeCallAppBarTitle": "جعلی کال",
+  "fakeCallActionText": "مجھے کال کریں",
+  "fakeCallSeconds": "سیکنڈ",
+  "fakeCallHintText": "کالر کا نام شامل کریں",
+  "fakeCallCallMeText": "مجھے کال کریں",
+  "fakeCallCallingIn": "میں بلاتا ہوں",
+  "fakeCallCancelText": "منسوخ کریں",
+
+  "profileAppBarText": "آپ کا پروفائل",
+  "profileSnackBarText": "ٹیکسٹ کلپ بورڈ میں کاپی کیا گیا!",
+  "profileChangeLanguageText": "زبان تبدیل کریں",
+  "profileSignOutText": "باہر نکلیں",
+
+  "locationDetailsAppBarText": "مقام کی تفصیلات",
+  "locationLastUpdatedText": "آخری بار اپ ڈیٹ کیا گیا",
+  "locationLastUpdatedTrip": "آخری بار اپ ڈیٹ ٹرپ",
+  "locationFrom": "سے",
+  "locationTo": "تک",
+  "locationVehicleNo": "وہیکل نمبر",
+
+  "allSOSAppBarText": "سب سوس",
+
+  "sosDetailsAppBarTitle": "سوس کی تفصیلات",
+
+  "changeLanguageAppBarText": "زبان تبدیل کریں",
+  "changeLanguagePreferredLangugage": "اپنی پسندیدہ زبان منتخب کریں",
+
+  "bottomNavigationHome": "ہوم",
+  "bottomNavigationMyGroup": "میرا گروپ",
+  "bottomNavigationSOS": "ایس او ایس",
+  "bottomNavigationFakeCall": "جعلی کال",
+  "bottomNavigationProfile": "پروفائل"
+}

@@ -1,0 +1,81 @@
+{
+  "@@locale": "or",
+  
+  "onboardingOneTitle": "ଆପଣଙ୍କ ଅବସ୍ଥା ଭାଗିବା",
+  "onboardingTwoTitle": "ଏସ୍ ଓ ଏସ୍ ପଠାନ୍ତୁ",
+  "onboardingThreeTitle": "ନକଳ କଲ୍ ଅନୁରୂପ କରନ୍ତୁ",
+
+  "onboardingOneSubtitle": "ଯାତ୍ରା କରିବା ବେଳେ କିମ୍ବା ପଥରେ ଥିବା ବେଳେ",
+  "onboardingTwoSubtitle": "ଆପାତକାଲିନ ସମୟରେ",
+  "onboardingThreeSubtitle": "ଅସହଜ ସ୍ଥିତି ଥିବାକୁ ହାରାଇବା ପାଇଁ",
+
+  "loginActionText": "ଏଠାରେ ଲଗଇନ୍ କରନ୍ତୁ",
+  "loginEmailPlaceholder": "ଆପଣଙ୍କ ଇମେଲ୍ ଲେଖନ୍ତୁ",
+  "loginPasswordPlaceholder": "ଆପଣଙ୍କ ପାସ୍‌ୱର୍ଡ୍ ଲେଖନ୍ତୁ",
+  "loginButton": "ଲଗଇନ୍",
+  "loginBottomText": "ଖାତା ନାଁ ଅଛି?\u00A0",
+  "loginBottomTextTwo": "ସାଇନ୍ ଅପ୍",
+
+  "signupActionText": "ସାଇନ୍ ଅପ୍ କରନ୍ତୁ",
+  "signupNamePlaceholder": "ନାମ",
+  "signupEmailPlaceholder": "ଇମେଲ୍",
+  "signupPasswordPlaceholder": "ପାସ୍‌ୱର୍ଡ୍",
+  "signupConfirmPasswordPlaceholder": "ପାସ୍‌ୱର୍ଡ୍ ପୁଣି ଲେଖନ୍ତୁ",
+  "signupButton": "ସାଇନ୍ ଅପ୍",
+  "signupBottomText": "ଖାତା ଅଛି?\u00A0",
+  "signupBottomTextTwo": "ଲଗଇନ୍",
+
+  "homeAppBarTitle": "ହୋମ୍",
+  "homeTrackingModalHeading": "ସାରାଂଶ",
+  "homeTrackingFrom": "ଥେକେ",
+  "homeTrackingTo": "ପାଇଁ",
+  "homeTrackingLicenseNumber": "ଲାଇସେନ୍ସ ନମ୍ବର",
+  "homeTrackingButton": "ଟ୍ର୍ୟାକିଂ ଶୁରୁ କରନ୍ତୁ",
+
+  "homeTrackingEnabledHeading": "ଟ୍ର୍ୟାକିଂ ସକ୍ରିୟ କରାଯାଉଛି",
+  "homeTrackingEnabledSubtitle": "ଟ୍ର୍ୟାକିଂ ବନ୍ଦ କରିବା ପାଇଁ ଆପ୍ ବନ୍ଦ କରନ୍ତୁ",
+
+  "groupSnackBarSuccess": "ସଦସ୍ୟ ସଫଳତାରେ ଯୋଡିଅନ୍ତୁ!",
+  "groupSnackBarError": "ସଦସ୍ୟ ଯୋଡିବାକୁ ଅଶିଦ୍ଧ ହୋଇଛି!",
+  "groupAppBarTitle": "ଆପଣଙ୍କ ସମୁହ",
+  "groupUserSearchHintText": "ବ୍ୟବହାରକାରୀ ଆଇଡି ଦ୍ୱାରା ଖୋଜନ୍ତୁ",
+  "groupMembersTitle": "ସଦସ୍ୟଗଣ",
+
+  "sosAppbarTitle": "ଏସ୍ ଓ ଏସ୍",
+  "sosActionText": "ଆପଣଙ୍କ ସ୍ଥାନ ସହ ଆପଣଙ୍କ ସଦସ୍ୟଗଣଙ୍କୁ ଏକ ହେଚାରୀ ପ୍ରେରିତ ହେବ",
+  "sosSendingText": "ହେଚାରୀ ପ୍ରେରିତ ହେଉଛି",
+  "sosCancelText": "ରଦ୍ଦ କରିବା ପାଇଁ ପୁଣି ଦବାନ୍ତୁ",
+
+  "fakeCallAppBarTitle": "ନକଳ କଲ୍",
+  "fakeCallActionText": "ମୋର କଲ୍ କରନ୍ତୁ",
+  "fakeCallSeconds": "ସେକେଣ୍ଡ୍‌",
+  "fakeCallHintText": "କଲର ନାମ ଯୋଡ଼ନ୍ତୁ",
+  "fakeCallCallMeText": "ମୁଁ କଲ୍ କରନ୍ତୁ",
+  "fakeCallCallingIn": "କଲ୍ କରାଯାଉଛି",
+  "fakeCallCancelText": "ରଦ୍ଦ କରନ୍ତୁ",
+
+  "profileAppBarText": "ଆପଣଙ୍କ ପ୍ରୋଫାଇଲ୍",
+  "profileSnackBarText": "ଟେକ୍ସଟ୍‌ଟି କପି ଟୁ କ୍ଲିପବୋର୍ଡ୍ କରାଯାଇଛି!",
+  "profileChangeLanguageText": "ଭାଷା ପରିବର୍ତ୍ତନ କରନ୍ତୁ",
+  "profileSignOutText": "ପ୍ରସ୍ଥାନ କରନ୍ତୁ",
+
+  "locationDetailsAppBarText": "ସ୍ଥାନ ବିବରଣୀ",
+  "locationLastUpdatedText": "ଅନ୍ୟନ୍ତମ ଯାଚ୍ଚିତ",
+  "locationLastUpdatedTrip": "ଅନ୍ୟନ୍ତମ ଯାଚ୍ଚିତ ପ୍ରଯାଣ",
+  "locationFrom": "ଥେକେ",
+  "locationTo": "ପାଇଁ",
+  "locationVehicleNo": "ଗାଡି ନମ୍ବର",
+
+  "allSOSAppBarText": "ସମସ୍ତ ଏସ୍ ଓ ଏସ୍",
+
+  "sosDetailsAppBarTitle": "ଏସ୍ ଓ ଏସ୍ ବିବରଣୀ",
+
+  "changeLanguageAppBarText": "ଭାଷା ପରିବର୍ତ୍ତନ",
+  "changeLanguagePreferredLangugage": "ଆପଣଙ୍କ ପସନ୍ଦରେ ଭାଷା ବାଛନ୍ତୁ",
+
+  "bottomNavigationHome": "ହୋମ୍",
+  "bottomNavigationMyGroup": "ମୋର ସମୂହ",
+  "bottomNavigationSOS": "ଏସୋଏସ୍",
+  "bottomNavigationFakeCall": "ମାନକ କଲ୍",
+  "bottomNavigationProfile": "ପ୍ରୋଫାଇଲ୍"
+}

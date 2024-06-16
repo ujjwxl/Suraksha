@@ -1,0 +1,81 @@
+{
+  "@@locale": "bn",
+  
+  "onboardingOneTitle": "আপনার লোকেশন শেয়ার করুন",
+  "onboardingTwoTitle": "এসওএস পাঠান",
+  "onboardingThreeTitle": "কৃত্রিম কল সময় সূচি",
+
+  "onboardingOneSubtitle": "ভ্রমণের সময় বা লক্ষ্যে থাকার সময়",
+  "onboardingTwoSubtitle": "জরুরি অবস্থায়",
+  "onboardingThreeSubtitle": "অসুবিধাজনক অবস্থা থেকে প্রস্তুতি নিতে",
+
+  "loginActionText": "এখানে লগইন করুন",
+  "loginEmailPlaceholder": "আপনার ইমেইল লিখুন",
+  "loginPasswordPlaceholder": "আপনার পাসওয়ার্ড লিখুন",
+  "loginButton": "লগইন",
+  "loginBottomText": "একাউন্ট নেই?\u00A0",
+  "loginBottomTextTwo": "নিবন্ধন করুন",
+
+  "signupActionText": "নিবন্ধন করুন",
+  "signupNamePlaceholder": "নাম",
+  "signupEmailPlaceholder": "ইমেইল",
+  "signupPasswordPlaceholder": "পাসওয়ার্ড",
+  "signupConfirmPasswordPlaceholder": "পাসওয়ার্ড নিশ্চিত করুন",
+  "signupButton": "নিবন্ধন",
+  "signupBottomText": "ইতিমধ্যে একটি একাউন্ট আছে?\u00A0",
+  "signupBottomTextTwo": "লগইন",
+
+  "homeAppBarTitle": "হোম",
+  "homeTrackingModalHeading": "সংক্ষিপ্তসার",
+  "homeTrackingFrom": "থেকে",
+  "homeTrackingTo": "পর্যন্ত",
+  "homeTrackingLicenseNumber": "লাইসেন্স নম্বর",
+  "homeTrackingButton": "ট্র্যাকিং শুরু করুন",
+
+  "homeTrackingEnabledHeading": "ট্র্যাকিং সক্রিয়",
+  "homeTrackingEnabledSubtitle": "ট্র্যাকিং বন্ধ করতে অ্যাপ বন্ধ করুন",
+
+  "groupSnackBarSuccess": "সদস্য সফলভাবে যুক্ত হয়েছে!",
+  "groupSnackBarError": "সদস্য যুক্ত করা যায়নি!",
+  "groupAppBarTitle": "আপনার গ্রুপ",
+  "groupUserSearchHintText": "ব্যবহারকারী আইডি দিয়ে অনুসন্ধান করুন",
+  "groupMembersTitle": "সদস্য",
+
+  "sosAppbarTitle": "এসওএস",
+  "sosActionText": "আপনার অবস্থান সহ আপনার সদস্যদের একটি সতর্কতা পাঠানো হবে",
+  "sosSendingText": "সতর্কতা পাঠানো হচ্ছে",
+  "sosCancelText": "বাতিল করতে আবার চাপুন",
+
+  "fakeCallAppBarTitle": "কৃত্রিম কল",
+  "fakeCallActionText": "আমাকে কল করুন",
+  "fakeCallSeconds": "সেকেন্ড",
+  "fakeCallHintText": "কলার নাম যুক্ত করুন",
+  "fakeCallCallMeText": "কল করুন",
+  "fakeCallCallingIn": "কল করা হচ্ছে",
+  "fakeCallCancelText": "বাতিল",
+
+  "profileAppBarText": "আপনার প্রোফাইল",
+  "profileSnackBarText": "ক্লিপবোর্ডে কপি করা হয়েছে!",
+  "profileChangeLanguageText": "ভাষা পরিবর্তন করুন",
+  "profileSignOutText": "সাইন আউট",
+
+  "locationDetailsAppBarText": "লোকেশন বিস্তারিত",
+  "locationLastUpdatedText": "সর্বশেষ আপডেট",
+  "locationLastUpdatedTrip": "সর্বশেষ আপডেট ট্রিপ",
+  "locationFrom": "থেকে",
+  "locationTo": "পর্যন্ত",
+  "locationVehicleNo": "গাড়ি নম্বর",
+
+  "allSOSAppBarText": "সমস্ত এসওএস",
+
+  "sosDetailsAppBarTitle": "এসওএস বিস্তারিত",
+
+  "changeLanguageAppBarText": "ভাষা পরিবর্তন করুন",
+  "changeLanguagePreferredLangugage": "আপনার পছন্দসই ভাষা নির্বাচন করুন",
+
+  "bottomNavigationHome": "হোম",
+  "bottomNavigationMyGroup": "আমার গ্রুপ",
+  "bottomNavigationSOS": "এসওএস",
+  "bottomNavigationFakeCall": "বাতিল কল",
+  "bottomNavigationProfile": "প্রোফাইল"
+}

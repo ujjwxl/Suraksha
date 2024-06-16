@@ -1,8 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trackingapp/components/input_field.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:trackingapp/pages/incoming_call_page.dart';
 
 class FakeCallPage extends StatefulWidget {
@@ -27,6 +29,7 @@ class _FakeCallPageState extends State<FakeCallPage> {
   }
 
   void startTimer() {
+    HapticFeedback.heavyImpact();
     _remainingSeconds = _selectedTime;
     _timer = Timer.periodic(
       const Duration(seconds: 1),
@@ -34,6 +37,7 @@ class _FakeCallPageState extends State<FakeCallPage> {
         setState(
           () {
             if (_remainingSeconds > 0) {
+              HapticFeedback.heavyImpact();
               _remainingSeconds--;
             } else {
               timer.cancel();
@@ -53,6 +57,7 @@ class _FakeCallPageState extends State<FakeCallPage> {
   }
 
   void cancelTimer() {
+    HapticFeedback.heavyImpact();
     _timer.cancel();
     setState(() {
       _remainingSeconds = 0;
@@ -61,10 +66,11 @@ class _FakeCallPageState extends State<FakeCallPage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Fake Call',
+          appLocalizations.fakeCallAppBarTitle,
           style: GoogleFonts.dmSans(
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -82,7 +88,7 @@ class _FakeCallPageState extends State<FakeCallPage> {
               Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Text(
-                  'Call me in',
+                  appLocalizations.fakeCallActionText,
                   style: GoogleFonts.dmSans(
                     fontSize: 18,
                   ),
@@ -117,7 +123,7 @@ class _FakeCallPageState extends State<FakeCallPage> {
                           ),
                         ),
                         child: Text(
-                          '${possibleTimes[index]} sec',
+                          '${possibleTimes[index]} ${appLocalizations.fakeCallSeconds}',
                           style: GoogleFonts.dmSans(
                             color: textColor,
                           ),
@@ -139,7 +145,7 @@ class _FakeCallPageState extends State<FakeCallPage> {
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    hintText: 'Add a caller name',
+                    hintText: appLocalizations.fakeCallHintText,
                     hintStyle: GoogleFonts.dmSans(),
                     prefixIcon: const Icon(Icons.person),
                   ),
@@ -164,7 +170,7 @@ class _FakeCallPageState extends State<FakeCallPage> {
                     padding: MaterialStateProperty.all(EdgeInsets.all(20.0)),
                   ),
                   child: Text(
-                    'Call Me',
+                    appLocalizations.fakeCallCallMeText,
                     style: GoogleFonts.dmSans(
                       fontSize: 14,
                       color: Colors.white,
@@ -177,7 +183,9 @@ class _FakeCallPageState extends State<FakeCallPage> {
           Center(
             child: Column(
               children: [
-                Text(_remainingSeconds != 0 ? 'Calling in' : ''),
+                Text(_remainingSeconds != 0
+                    ? appLocalizations.fakeCallCallingIn
+                    : ''),
                 Text(
                   _remainingSeconds != 0 ? '$_remainingSeconds' : '',
                   style: GoogleFonts.dmSans(
@@ -205,7 +213,7 @@ class _FakeCallPageState extends State<FakeCallPage> {
                   padding: MaterialStateProperty.all(EdgeInsets.all(20.0)),
                 ),
                 child: Text(
-                  'Cancel',
+                  appLocalizations.fakeCallCancelText,
                   style: GoogleFonts.dmSans(
                     fontSize: 14,
                     color: Colors.white,

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:trackingapp/pages/location_details_page.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:trackingapp/pages/sos_details_page.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -135,10 +136,11 @@ class _AllSOSPageState extends State<AllSOSPage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'All SOS',
+          appLocalizations.allSOSAppBarText,
           style: GoogleFonts.dmSans(
             fontSize: 22,
             fontWeight: FontWeight.bold,

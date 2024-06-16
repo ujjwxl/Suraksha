@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:label="trackingapp"
+        android:label="Suraksha"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

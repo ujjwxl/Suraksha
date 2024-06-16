@@ -1,0 +1,81 @@
+{
+  "@@locale": "kn",
+  
+  "onboardingOneTitle": "ನಿಮ್ಮ ಸ್ಥಳಾಂತರ ಹಂಚಿಕೊಳ್ಳಿ",
+  "onboardingTwoTitle": "ಎಸ್‌ಒ‌ಎಸ್ ಕಳುಹಿಸಿ",
+  "onboardingThreeTitle": "ಕೃತ್ರಿಮ ಕಾಲ್ ವೇಳಾಪಟ್ಟಿ",
+
+  "onboardingOneSubtitle": "ಪ್ರಯಾಣ ಮಾಡುವಾಗ ಅಥವಾ ಸಾಗರಿಕೆಯಲ್ಲಿ ಇರುವಾಗ",
+  "onboardingTwoSubtitle": "ತಾತ್ಕಾಲಿಕ ಅವಸ್ಥೆಯಲ್ಲಿ",
+  "onboardingThreeSubtitle": "ಅಸಹಜ ಸನ್ನಿವೇಶಗಳಿಂದ ಹೊರಬಂದು ನಿಲ್ಲಲು",
+
+  "loginActionText": "ಇಲ್ಲಿ ಲಾಗಿನ್ ಮಾಡಿ",
+  "loginEmailPlaceholder": "ನಿಮ್ಮ ಇಮೇಲ್ ಅನ್ನು ನಮೂದಿಸಿ",
+  "loginPasswordPlaceholder": "ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ನಮೂದಿಸಿ",
+  "loginButton": "ಲಾಗಿನ್",
+  "loginBottomText": "ನಿಮ್ಮಲ್ಲಿ ಖಾತೆ ಇಲ್ಲವೇ?\u00A0",
+  "loginBottomTextTwo": "ಸೈನ್ ಅಪ್",
+
+  "signupActionText": "ಸೈನ್ ಅಪ್",
+  "signupNamePlaceholder": "ಹೆಸರು",
+  "signupEmailPlaceholder": "ಇಮೇಲ್",
+  "signupPasswordPlaceholder": "ಪಾಸ್‌ವರ್ಡ್",
+  "signupConfirmPasswordPlaceholder": "ಪಾಸ್‌ವರ್ಡ್ ದೃಢೀಕರಿಸಿ",
+  "signupButton": "ಸೈನ್ ಅಪ್",
+  "signupBottomText": "ನಿಮ್ಮಲ್ಲಿ ಈಗಾಗಲೇ ಖಾತೆ ಇದೆಯೇ?\u00A0",
+  "signupBottomTextTwo": "ಲಾಗಿನ್",
+
+  "homeAppBarTitle": "ಹೋಮ್",
+  "homeTrackingModalHeading": "ಸಾರಾಂಶ",
+  "homeTrackingFrom": "ಇಂದ",
+  "homeTrackingTo": "ಗೆ",
+  "homeTrackingLicenseNumber": "ಲೈಸೆನ್ಸ್ ಸಂಖ್ಯೆ",
+  "homeTrackingButton": "ಟ್ರ್ಯಾಕಿಂಗ್ ಪ್ರಾರಂಭಿಸಿ",
+
+  "homeTrackingEnabledHeading": "ಟ್ರ್ಯಾಕಿಂಗ್ ಸಕ್ರಿಯವಾಗಿದೆ",
+  "homeTrackingEnabledSubtitle": "ಟ್ರ್ಯಾಕಿಂಗ್ ನಿಲ್ಲಿಸಲು ಅಪ್ಲಿಕೇಶನ್ ಮುಚ್ಚಿ",
+
+  "groupSnackBarSuccess": "ಸದಸ್ಯರನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಸೇರಿಸಲಾಯಿತು!",
+  "groupSnackBarError": "ಸದಸ್ಯರನ್ನು ಸೇರಿಸಲಾಗಲಿಲ್ಲ!",
+  "groupAppBarTitle": "ನಿಮ್ಮ ಗುಂಪು",
+  "groupUserSearchHintText": "ಬಳಕೆದಾರ ಐಡಿ ಅನ್ನು ಹುಡುಕಿ",
+  "groupMembersTitle": "ಸದಸ್ಯರು",
+
+  "sosAppbarTitle": "ಎಸ್‌ಒ‌ಎಸ್",
+  "sosActionText": "ನಿಮ್ಮ ಸ್ಥಳ ಸಹಿತ ನಿಮ್ಮ ಸದಸ್ಯರಿಗೆ ಸೂಚನೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ",
+  "sosSendingText": "ಸೂಚನೆ ಕಳುಹಿಸುತ್ತಿದೆ",
+  "sosCancelText": "ರದ್ದು ಮಾಡಲು ಮತ್ತೊಮ್ಮೆ ಒತ್ತಿರಿ",
+
+  "fakeCallAppBarTitle": "ಕೃತ್ರಿಮ ಕಾಲ್",
+  "fakeCallActionText": "ನನಗೆ ಕಾಲ್ ಮಾಡಿ",
+  "fakeCallSeconds": "ಸೆಕೆಂಡ್",
+  "fakeCallHintText": "ಕಾಲರ್ ಹೆಸರನ್ನು ಸೇರಿಸಿ",
+  "fakeCallCallMeText": "ನನ್ನನ್ನು ಕರೆಯಿರಿ",
+  "fakeCallCallingIn": "ಕಾಲ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
+  "fakeCallCancelText": "ರದ್ದು",
+
+  "profileAppBarText": "ನಿಮ್ಮ ಪ್ರೊಫೈಲ್",
+  "profileSnackBarText": "ವರ್ಣಕೋಶದಲ್ಲಿ ಕಾಪಿ ಮಾಡಲಾಯಿತು!",
+  "profileChangeLanguageText": "ಭಾಷೆ ಬದಲಾಯಿಸಿ",
+  "profileSignOutText": "ಸೈನ್ ಔಟ್",
+
+  "locationDetailsAppBarText": "ಸ್ಥಳ ವಿವರಗಳು",
+  "locationLastUpdatedText": "ಕೊನೆಯಾಗಿ ಅಪ್‌ಡೇಟ್ ಮಾಡಲಾಗಿದೆ",
+  "locationLastUpdatedTrip": "ಕೊನೆಯಾಗಿ ಅಪ್‌ಡೇಟ್ ಮಾಡಿದ ಪ್ರಯಾಣ",
+  "locationFrom": "ಮೂಲ",
+  "locationTo": "ಗೆ",
+  "locationVehicleNo": "ವಾಹನ ಸಂಖ್ಯೆ",
+
+  "allSOSAppBarText": "ಎಲ್ಲಾ ಎಸ್‌ಒ‌ಎಸ್",
+
+  "sosDetailsAppBarTitle": "ಎಸ್‌ಒ‌ಎಸ್ ವಿವರಗಳು",
+
+  "changeLanguageAppBarText": "ಭಾಷೆ ಬದಲಾಯಿಸಿ",
+  "changeLanguagePreferredLangugage": "ನಿಮ್ಮ ಆದರಿತ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+
+  "bottomNavigationHome": "ಹೋಮ್",
+  "bottomNavigationMyGroup": "ನನ್ನ ಗುಂಪು",
+  "bottomNavigationSOS": "ಎಸ್ಒಎಸ್",
+  "bottomNavigationFakeCall": "ನಕಲು ಕಾಲ್",
+  "bottomNavigationProfile": "ಪ್ರೊಫೈಲ್"
+}

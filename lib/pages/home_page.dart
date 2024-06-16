@@ -4,6 +4,7 @@ import 'package:trackingapp/pages/fake_call_page.dart';
 import 'package:trackingapp/pages/group_page.dart';
 import 'package:trackingapp/pages/main_home_page.dart';
 import 'package:trackingapp/pages/new_profile_page.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:trackingapp/pages/profile_page.dart';
 import 'package:trackingapp/pages/sos_page.dart';
 
@@ -27,6 +28,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     return Scaffold(
       // appBar: AppBar(
       //   title: Text('Tracking App'),
@@ -45,38 +47,38 @@ class _HomePageState extends State<HomePage> {
         },
         // indicatorColor: Colors.amber,
         selectedIndex: currentPageIndex,
-        destinations: const <Widget>[
+        destinations: <Widget>[
           NavigationDestination(
             // selectedIcon: Icon(Iconsax.home1),
             // icon: Icon(Iconsax.home),
             selectedIcon: Icon(Icons.home),
             icon: Icon(Icons.home_outlined),
-            label: 'Home',
+            label: appLocalizations.bottomNavigationHome,
           ),
           NavigationDestination(
             // selectedIcon: Icon(Iconsax.people5),
             // icon: Icon(Iconsax.people),
             selectedIcon: Icon(Icons.people),
             icon: Icon(Icons.people_outline_sharp),
-            label: 'My Group',
+            label: appLocalizations.bottomNavigationMyGroup,
           ),
           NavigationDestination(
             icon: Icon(Icons.sos),
-            label: 'SOS',
+            label: appLocalizations.bottomNavigationSOS,
           ),
           NavigationDestination(
             // selectedIcon: Icon(Iconsax.call5),
             // icon: Icon(Iconsax.call),
             selectedIcon: Icon(Icons.call),
             icon: Icon(Icons.call_outlined),
-            label: 'Fake Call',
+            label: appLocalizations.bottomNavigationFakeCall,
           ),
           NavigationDestination(
             // selectedIcon: Icon(Iconsax.profile_2user5),
             // icon: Icon(Iconsax.profile_2user4),
             selectedIcon: Icon(Icons.person),
             icon: Icon(Icons.person_outline_outlined),
-            label: 'Profile',
+            label: appLocalizations.bottomNavigationProfile,
           ),
         ],
       ),

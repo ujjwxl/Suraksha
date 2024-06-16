@@ -8,6 +8,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:location/location.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:trackingapp/models/sos_model.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:trackingapp/pages/all_sos_page.dart';
 
 class SOSPage extends StatefulWidget {
@@ -108,10 +109,11 @@ class _SOSPageState extends State<SOSPage> {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'SOS',
+          appLocalizations.sosAppbarTitle,
           style: GoogleFonts.dmSans(
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -138,7 +140,7 @@ class _SOSPageState extends State<SOSPage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Text(
-              'An alert will be sent to your members with your location',
+              appLocalizations.sosActionText,
               textAlign: TextAlign.center,
               style: GoogleFonts.dmSans(
                 fontSize: 14,
@@ -152,7 +154,7 @@ class _SOSPageState extends State<SOSPage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 60.0),
             child: Text(
-              _isTimerRunning ? 'Alert sending in' : '',
+              _isTimerRunning ? appLocalizations.sosSendingText : '',
               textAlign: TextAlign.center,
               style: GoogleFonts.dmSans(
                 fontSize: 28,
@@ -185,10 +187,12 @@ class _SOSPageState extends State<SOSPage> {
                 ),
                 child: Center(
                   child: Text(
-                    _isTimerRunning ? '$_timerCount' : 'SOS',
+                    _isTimerRunning
+                        ? '$_timerCount'
+                        : appLocalizations.sosAppbarTitle,
                     style: GoogleFonts.dmSans(
                       color: Colors.white,
-                      fontSize: 48,
+                      fontSize: 40,
                     ),
                   ),
                 ),
@@ -201,7 +205,7 @@ class _SOSPageState extends State<SOSPage> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 60.0),
             child: Text(
-              _isTimerRunning ? 'Press again to CANCEL' : '',
+              _isTimerRunning ? appLocalizations.sosCancelText : '',
               textAlign: TextAlign.center,
               style: GoogleFonts.dmSans(
                 fontSize: 14,

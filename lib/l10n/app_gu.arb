@@ -1,0 +1,81 @@
+{
+  "@@locale": "gu",
+  
+  "onboardingOneTitle": "તમારું સ્થાન શેર કરો",
+  "onboardingTwoTitle": "એસઓએસ મોકલો",
+  "onboardingThreeTitle": "મેથેટને ઝોલો મૂકવો",
+
+  "onboardingOneSubtitle": "પ્રવાસ કરી રહ્યા વખતે અથવા માર્ગમાં રહેવાના સમયમાં",
+  "onboardingTwoSubtitle": "આપત્તિકાળે",
+  "onboardingThreeSubtitle": "અસન્નથાયી સ્થિતિઓથી બચવવા માટે",
+
+  "loginActionText": "અહીં લૉગઇન કરો",
+  "loginEmailPlaceholder": "તમારો ઇમેઇલ દાખલ કરો",
+  "loginPasswordPlaceholder": "તમારો પાસવર્ડ દાખલ કરો",
+  "loginButton": "લૉગઇન",
+  "loginBottomText": "એક એકાઉન્ટ નથી?\u00A0",
+  "loginBottomTextTwo": "સાઇન અપ કરો",
+
+  "signupActionText": "સાઇન અપ કરો",
+  "signupNamePlaceholder": "નામ",
+  "signupEmailPlaceholder": "ઇમેઇલ",
+  "signupPasswordPlaceholder": "પાસવર્ડ",
+  "signupConfirmPasswordPlaceholder": "પાસવર્ડ નિશ્ચિત કરો",
+  "signupButton": "સાઇન અપ",
+  "signupBottomText": "પહેલેથીજ એક એકાઉન્ટ છે?\u00A0",
+  "signupBottomTextTwo": "લૉગઇન",
+
+  "homeAppBarTitle": "હોમ",
+  "homeTrackingModalHeading": "સારાંશ",
+  "homeTrackingFrom": "થી",
+  "homeTrackingTo": "સુધી",
+  "homeTrackingLicenseNumber": "લાયસન્સ નંબર",
+  "homeTrackingButton": "ટ્રેકિંગ શરૂ કરો",
+
+  "homeTrackingEnabledHeading": "ટ્રેકિંગ સક્રિય",
+  "homeTrackingEnabledSubtitle": "ટ્રેકિંગ બંધ કરવા માટે એપ બંધ કરો",
+
+  "groupSnackBarSuccess": "સભ્ય સફળતાપૂર્વક ઉમેરવામાં આવ્યો!",
+  "groupSnackBarError": "સભ્ય ઉમેરવામાં નિષ્ફળ રહ્યો!",
+  "groupAppBarTitle": "તમારું ગ્રુપ",
+  "groupUserSearchHintText": "વપરાશકર્તા આઈડી દ્વારા શોધો",
+  "groupMembersTitle": "સભ્યો",
+
+  "sosAppbarTitle": "એસઓએસ",
+  "sosActionText": "તમારા સ્થાન સાથે તમારા સભ્યોને એક સતર્કતા મોકલવામાં આવશે",
+  "sosSendingText": "સતર્કતા મોકવી રહી છે",
+  "sosCancelText": "રદ કરવા માટે ફરીથી દબાવો",
+
+  "fakeCallAppBarTitle": "મૃત્યુ કોલ",
+  "fakeCallActionText": "મને કોલ કરો",
+  "fakeCallSeconds": "સેકન્ડ",
+  "fakeCallHintText": "કોલર નામ ઉમેરો",
+  "fakeCallCallMeText": "મને કોલ કરો",
+  "fakeCallCallingIn": "કોલ કરાવવામાં",
+  "fakeCallCancelText": "રદ કરો",
+
+  "profileAppBarText": "તમારું પ્રોફાઇલ",
+  "profileSnackBarText": "ક્લિપબોર્ડમાં કોપી કરવામાં આવ્યું!",
+  "profileChangeLanguageText": "ભાષા બદલો",
+  "profileSignOutText": "સાઇન આઉટ",
+
+  "locationDetailsAppBarText": "સ્થાન વિગતો",
+  "locationLastUpdatedText": "છેલ્લો અપડેટ",
+  "locationLastUpdatedTrip": "છેલ્લો અપડેટ ટ્રિપ",
+  "locationFrom": "થી",
+  "locationTo": "સુધી",
+  "locationVehicleNo": "વાહન નંબર",
+
+  "allSOSAppBarText": "બધા એસઓએસ",
+
+  "sosDetailsAppBarTitle": "એસઓએસ વિગતો",
+
+  "changeLanguageAppBarText": "ભાષા બદલો",
+  "changeLanguagePreferredLangugage": "તમારી પસંદગીની ભાષા પસંદ કરો",
+
+  "bottomNavigationHome": "હોમ",
+  "bottomNavigationMyGroup": "મારું ગ્રુપ",
+  "bottomNavigationSOS": "એસઓએસ",
+  "bottomNavigationFakeCall": "ખોટું કોલ",
+  "bottomNavigationProfile": "પ્રોફાઇલ"
+}

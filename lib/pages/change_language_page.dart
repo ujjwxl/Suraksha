@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:trackingapp/providers/language_provider.dart';
 
@@ -9,10 +10,11 @@ class ChangeLanguagePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Change Language',
+          appLocalizations.changeLanguageAppBarText,
           style: GoogleFonts.dmSans(
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -23,7 +25,7 @@ class ChangeLanguagePage extends StatelessWidget {
       body: Column(
         children: [
           Text(
-            'Choose your preferred language',
+            appLocalizations.changeLanguagePreferredLangugage,
             style: GoogleFonts.dmSans(fontSize: 14),
           ),
           const SizedBox(

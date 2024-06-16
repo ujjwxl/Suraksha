@@ -1,0 +1,81 @@
+{
+  "@@locale": "mr",
+  
+  "onboardingOneTitle": "आपले स्थान सामायिक करा",
+  "onboardingTwoTitle": "एसओएस पाठवा",
+  "onboardingThreeTitle": "खोटा कॉल योजना",
+
+  "onboardingOneSubtitle": "प्रवास करताना किंवा गतिविधीत असताना",
+  "onboardingTwoSubtitle": "त्रासात असताना",
+  "onboardingThreeSubtitle": "अस्वस्थपदासाठी",
+
+  "loginActionText": "येथे लॉग इन करा",
+  "loginEmailPlaceholder": "आपला ईमेल प्रविष्ट करा",
+  "loginPasswordPlaceholder": "आपला संकेतशब्द प्रविष्ट करा",
+  "loginButton": "लॉग इन",
+  "loginBottomText": "खाते नाही? \u00A0",
+  "loginBottomTextTwo": "साइन अप",
+
+  "signupActionText": "साइन अप करा",
+  "signupNamePlaceholder": "नाव",
+  "signupEmailPlaceholder": "ईमेल",
+  "signupPasswordPlaceholder": "संकेतशब्द",
+  "signupConfirmPasswordPlaceholder": "संकेतशब्द पुष्टी करा",
+  "signupButton": "साइन अप",
+  "signupBottomText": "खाते आहे? \u00A0",
+  "signupBottomTextTwo": "लॉग इन",
+
+  "homeAppBarTitle": "होम",
+  "homeTrackingModalHeading": "सारांश",
+  "homeTrackingFrom": "पासून",
+  "homeTrackingTo": "पर्यंत",
+  "homeTrackingLicenseNumber": "अनुमती क्रमांक",
+  "homeTrackingButton": "ट्रॅकिंग सुरू करा",
+
+  "homeTrackingEnabledHeading": "ट्रॅकिंग सक्षम",
+  "homeTrackingEnabledSubtitle": "ट्रॅकिंग थांबविण्यासाठी अ‍ॅप संपादित करा",
+
+  "groupSnackBarSuccess": "सदस्य यशस्वीरित्या जोडला!",
+  "groupSnackBarError": "सदस्य जोडण्यात अयशस्वी!",
+  "groupAppBarTitle": "आपल्या समूहात",
+  "groupUserSearchHintText": "वापरकर्त्याच्या आयडीने शोधा",
+  "groupMembersTitle": "सदस्य",
+
+  "sosAppbarTitle": "एसओएस",
+  "sosActionText": "आपल्या सदस्यांना आपल्या स्थानाशी एक सूचना पाठवता येईल",
+  "sosSendingText": "सूचना पाठवत आहे",
+  "sosCancelText": "रद्द करण्यासाठी पुन्हा दाबा",
+
+  "fakeCallAppBarTitle": "खोटा कॉल",
+  "fakeCallActionText": "मला कॉल करा",
+  "fakeCallSeconds": "सेकंद",
+  "fakeCallHintText": "कॉलरचं नाव जोडा",
+  "fakeCallCallMeText": "मला कॉल करा",
+  "fakeCallCallingIn": "कॉल करीत आहे",
+  "fakeCallCancelText": "रद्द करा",
+
+  "profileAppBarText": "आपली प्रोफाइल",
+  "profileSnackBarText": "टेक्स्ट खाचून क्लिपबोर्डवर प्रतिलिपीत केली!",
+  "profileChangeLanguageText": "भाषा बदला",
+  "profileSignOutText": "साइन आउट",
+
+  "locationDetailsAppBarText": "स्थानाच्या तपशीलांची माहिती",
+  "locationLastUpdatedText": "शेवटच्या अपडेट",
+  "locationLastUpdatedTrip": "शेवटच्या अपडेट ट्रिप",
+  "locationFrom": "पासून",
+  "locationTo": "ते",
+  "locationVehicleNo": "वाहन क्रमांक",
+
+  "allSOSAppBarText": "सर्व एसओएस",
+
+  "sosDetailsAppBarTitle": "एसओएस तपशील",
+
+  "changeLanguageAppBarText": "भाषा बदला",
+  "changeLanguagePreferredLangugage": "आपली पसंतीची भाषा निवडा",
+
+  "bottomNavigationHome": "होम",
+  "bottomNavigationMyGroup": "माझा गट",
+  "bottomNavigationSOS": "एसओएस",
+  "bottomNavigationFakeCall": "खोटा कॉल",
+  "bottomNavigationProfile": "प्रोफाइल"
+}

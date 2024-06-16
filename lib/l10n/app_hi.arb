@@ -31,5 +31,50 @@
     "homeTrackingButton": "ट्रैकिंग शुरू करें",
 
     "homeTrackingEnabledHeading": "ट्रैकिंग सक्रिय है",
-    "homeTrackingEnabledSubtitle": "ट्रैकिंग बंद करने के लिए ऐप बंद करें"
+    "homeTrackingEnabledSubtitle": "ट्रैकिंग बंद करने के लिए ऐप बंद करें",
+
+    "groupSnackBarSuccess": "सदस्य सफलतापूर्वक जोड़ा गया!",
+    "groupSnackBarError": "सदस्य जोड़ा नहीं जा सका!",
+    "groupAppBarTitle": "आपका समूह",
+    "groupUserSearchHintText": "यूज़र आईडी द्वारा यूज़र खोजें",
+    "groupMembersTitle": "सदस्य",
+
+    "sosAppbarTitle": "एसओएस",
+    "sosActionText": "एक अलर्ट आपके सदस्यों को आपकी लोकेशन के साथ भेजा जाएगा",
+    "sosSendingText": "अलर्ट भेजा जा रहा है",
+    "sosCancelText": "रद्द करने के लिए फिर से दबाएं",
+
+    "fakeCallAppBarTitle": "फेक कॉल",
+    "fakeCallActionText": "मुझे कॉल करें",
+    "fakeCallSeconds": "सेकंड",
+    "fakeCallHintText": "कॉलर का नाम लिखें",
+    "fakeCallCallMeText": "कॉल करें",
+    "fakeCallCallingIn": "कॉल किया जा रहा है",
+    "fakeCallCancelText": "रद्द करें",
+
+    "profileAppBarText": "प्रोफ़ाइल",
+    "profileSnackBarText": "पाठ को क्लिपबोर्ड पर कॉपी किया गया!",
+    "profileChangeLanguageText": "भाषा बदलें",
+    "profileSignOutText": "लॉग आउट करें",
+
+    "locationDetailsAppBarText": "लोकेशन विवरण",
+    "locationLastUpdatedText": "आखिरी अपडेट",
+    "locationLastUpdatedTrip": "आखिरी अपडेट यात्रा",
+    "locationFrom": "कहाँ से :",
+    "locationTo": "कहाँ तक :",
+    "locationVehicleNo": "वाहन नंबर",
+
+    "allSOSAppBarText": "सभी एसओएस",
+
+    "sosDetailsAppBarTitle": "एसओएस विवरण",
+
+
+    "changeLanguageAppBarText": "भाषा बदलें",
+    "changeLanguagePreferredLangugage": "अपनी पसंदीदा भाषा चुनें",
+
+    "bottomNavigationHome": "होम",
+    "bottomNavigationMyGroup": "मेरा समूह",
+    "bottomNavigationSOS": "एसओएस",
+    "bottomNavigationFakeCall": "फेक कॉल",
+    "bottomNavigationProfile": "प्रोफ़ाइल"
 }

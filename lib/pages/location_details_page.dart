@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
@@ -13,10 +14,11 @@ class LocationDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Location Details',
+          appLocalizations.locationDetailsAppBarText,
           style: GoogleFonts.dmSans(
             fontSize: 22,
             fontWeight: FontWeight.bold,
@@ -104,7 +106,7 @@ class LocationDetailsPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Text(
-                    'Last Updated: $formattedTime',
+                    '${appLocalizations.locationLastUpdatedText}: $formattedTime',
                     style: GoogleFonts.dmSans(
                       color: Colors.white,
                       fontSize: 16,
@@ -134,21 +136,21 @@ class LocationDetailsPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Last Updated Trip',
+                          appLocalizations.locationLastUpdatedTrip,
                           style: GoogleFonts.dmSans(
                             color: Colors.white,
                             fontSize: 18,
                           ),
                         ),
                         Text(
-                          'From $from to $to',
+                          '${appLocalizations.locationFrom} $from ${appLocalizations.locationTo} $to',
                           style: GoogleFonts.dmSans(
                             color: Colors.white,
                             fontSize: 14,
                           ),
                         ),
                         Text(
-                          'Vehicle No : $licenseNumber',
+                          '${appLocalizations.locationVehicleNo} : $licenseNumber',
                           style: GoogleFonts.dmSans(
                             color: Colors.white,
                             fontSize: 14,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
 import 'package:latlong2/latlong.dart';
 
@@ -10,6 +11,7 @@ class SOSDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final AppLocalizations appLocalizations = AppLocalizations.of(context)!;
     print(sosInfo);
 
     final latitude = sosInfo['latitude'];
@@ -24,7 +26,7 @@ class SOSDetailsPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            'SOS Details',
+            appLocalizations.sosDetailsAppBarTitle,
             style: GoogleFonts.dmSans(
               fontSize: 22,
               fontWeight: FontWeight.bold,

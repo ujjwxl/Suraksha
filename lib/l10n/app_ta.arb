@@ -1,0 +1,79 @@
+{
+    "onboardingOneTitle": "உங்கள் இருப்பிடத்தைப் பகிர்ந்து கொள்ளுங்கள்",
+    "onboardingTwoTitle": "SOS அனுப்புங்கள்",
+    "onboardingThreeTitle": "பொய் அழைக்க",
+
+    "onboardingOneSubtitle": "பயணிப்பிற்கு அல்லது பயணத்தில்",
+    "onboardingTwoSubtitle": "அவசர அவதாரணையில்",
+    "onboardingThreeSubtitle": "தொடர்ந்து பரிந்துரைகளிலிருந்து வெளியேறுவதற்காக",
+
+    "loginActionText": "உள்நுழைக",
+    "loginEmailPlaceholder": "உங்கள் மின்னஞ்சலை உள்ளிடவும்",
+    "loginPasswordPlaceholder": "உங்கள் கடவுச்சொல்லை உள்ளிடவும்",
+    "loginButton": "உள்நுழைய",
+    "loginBottomText": "கணக்கு இல்லையா?\u00A0",
+    "loginBottomTextTwo": "பதிவு செய்யுங்கள்",
+
+    "signupActionText": "பதிவு செய்யுங்கள்",
+    "signupNamePlaceholder": "பெயர்",
+    "signupEmailPlaceholder": "மின்னஞ்சல்",
+    "signupPasswordPlaceholder": "கடவுச்சொல்",
+    "signupConfirmPasswordPlaceholder": "கடவுச்சொல் உறுதிப்படுத்தவும்",
+    "signupButton": "பதிவு செய்யுங்கள்",
+    "signupBottomText": "ஏற்கனவே கணக்கு உள்ளதுகூட?\u00A0",
+    "signupBottomTextTwo": "உள்நுழையுங்கள்",
+
+    "homeAppBarTitle": "முகப்பு",
+    "homeTrackingModalHeading": "சுருக்கம்",
+    "homeTrackingFrom": "இருந்து",
+    "homeTrackingTo": "வரை",
+    "homeTrackingLicenseNumber": "உரிமான எண்",
+    "homeTrackingButton": "டிராக்கிங் ஆரம்பிக்க",
+
+    "homeTrackingEnabledHeading": "டிராக்கிங் இயலுமைச் செயல்பாடு",
+    "homeTrackingEnabledSubtitle": "மூடுவதற்கு பயன்படுத்துவதை முடிக்க அப் அனைவருக்கும் அனுமதி உள்ளது",
+
+    "groupSnackBarSuccess": "உறுப்பினர் வெற்றிகரமாக சேர்க்கப்பட்டார்!",
+    "groupSnackBarError": "உறுப்பினர் சேர்க்க முடியவில்லை!",
+    "groupAppBarTitle": "உங்கள் குழு",
+    "groupUserSearchHintText": "பயனர் ஐடி மூலம் தேடுக",
+    "groupMembersTitle": "உறுப்பினர்கள்",
+
+    "sosAppbarTitle": "SOS",
+    "sosActionText": "உங்கள் இருந்துகணிப்புகளுக்கு மின்னணு அனுப்பப்படும்",
+    "sosSendingText": "அறிவித்தல் அனுப்புகிறது",
+    "sosCancelText": "ரத்து செய்ய மீண்டும் அழுத்துக",
+
+    "fakeCallAppBarTitle": "பொய் அழைப்பு",
+    "fakeCallActionText": "என்னை அழைக்க",
+    "fakeCallSeconds": "வினாடிகள்",
+    "fakeCallHintText": "அழைப்பான் பெயரை சேர்க்கவும்",
+    "fakeCallCallMeText": "என்னை அழைக்க",
+    "fakeCallCallingIn": "அழைக்கிறது",
+    "fakeCallCancelText": "ரத்து செய்யுங்கள்",
+
+    "profileAppBarText": "உங்கள் சுயவிவரம்",
+    "profileSnackBarText": "உரை கணிக்கப்பட்டுள்ளது!",
+    "profileChangeLanguageText": "மொழியை மாற்று",
+    "profileSignOutText": "வெளியேறு",
+
+    "locationDetailsAppBarText": "இருப்பிட விவரங்கள்",
+    "locationLastUpdatedText": "கடைசி புதுப்பிக்கப்பட்டது",
+    "locationLastUpdatedTrip": "கடைசியாக புதுப்பிக்கப்பட்ட பயணம்",
+    "locationFrom": "இருந்து",
+    "locationTo": "வரை",
+    "locationVehicleNo": "வாகன எண்",
+
+    "allSOSAppBarText": "அனைத்து SOS காட்சிகள்",
+
+    "sosDetailsAppBarTitle": "SOS விவரங்கள்",
+
+    "changeLanguageAppBarText": "மொழியை மாற்று",
+    "changeLanguagePreferredLangugage": "உங்கள் விருப்ப மொழியைத் தேர்ந்தெடுக்கவும்",
+
+    "bottomNavigationHome": "ஹோம்",
+    "bottomNavigationMyGroup": "என் குழு",
+    "bottomNavigationSOS": "எஸ்ஓஎஸ்",
+    "bottomNavigationFakeCall": "பெயர் அழைப்பு",
+    "bottomNavigationProfile": "சுயவிவரம்"
+}

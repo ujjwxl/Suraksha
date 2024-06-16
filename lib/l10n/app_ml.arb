@@ -1,0 +1,81 @@
+{
+  "@@locale": "ml",
+  
+  "onboardingOneTitle": "നിങ്ങളുടെ സ്ഥലം ഷെയർ ചെയ്യുക",
+  "onboardingTwoTitle": "എസ്ഓഎസ് അയയ്ക്കുക",
+  "onboardingThreeTitle": "നക്കായ കള്ള് അടയ്ക്കുക",
+
+  "onboardingOneSubtitle": "പ്രയാണികളുടെയോ കയറിനുള്ളതോ പ്രയോജനപ്പെടുന്നതായി",
+  "onboardingTwoSubtitle": "അപകടകാലത്ത്",
+  "onboardingThreeSubtitle": "അസാന്നിധ്യമായ സന്ദര്‍ഭങ്ങളില്‍ നിന്നും പോകുക",
+
+  "loginActionText": "ഇവിടെ ലോഗിന്‍ ചെയ്യുക",
+  "loginEmailPlaceholder": "നിങ്ങളുടെ ഇമെയിൽ നമ്പര്‍ നൽകുക",
+  "loginPasswordPlaceholder": "നിങ്ങളുടെ പാസ്‌വേഡ് നമ്പര്‍ നൽകുക",
+  "loginButton": "ലോഗിന്‍",
+  "loginBottomText": "നിങ്ങള്‍ക്ക് ഒരു അക്കൗണ്ട് ഇല്ലെങ്കിൽ?\u00A0",
+  "loginBottomTextTwo": "സൈൻ അപ്പ് ചെയ്യുക",
+
+  "signupActionText": "സൈൻ അപ്പ് ചെയ്യുക",
+  "signupNamePlaceholder": "പേര്",
+  "signupEmailPlaceholder": "ഇമെയിൽ",
+  "signupPasswordPlaceholder": "പാസ്‌വേഡ്",
+  "signupConfirmPasswordPlaceholder": "പാസ്‌വേഡ് സ്ഥിരീകരിക്കുക",
+  "signupButton": "സൈൻ അപ്പ് ചെയ്യുക",
+  "signupBottomText": "നിങ്ങള്‍ക്ക് ഇപ്പോഴും അക്കൗണ്ട് ഉണ്ടോ?\u00A0",
+  "signupBottomTextTwo": "ലോഗിന്‍",
+
+  "homeAppBarTitle": "ഹോം",
+  "homeTrackingModalHeading": "സാരാംശം",
+  "homeTrackingFrom": "മുതല്‍",
+  "homeTrackingTo": "വരെ",
+  "homeTrackingLicenseNumber": "ലൈസന്‍സ് നമ്പര്‍",
+  "homeTrackingButton": "ട്രാക്കിംഗ് ആരംഭിക്കുക",
+
+  "homeTrackingEnabledHeading": "ട്രാക്കിംഗ് പ്രവർത്തിക്കുന്നു",
+  "homeTrackingEnabledSubtitle": "ട്രാക്കിംഗ് നിര്‍ത്താന്‍ അപ്ലിക്കേഷൻ അടയ്ക്കുക",
+
+  "groupSnackBarSuccess": "അംഗം വിജയകരമായി ചേര്‍ക്കപ്പെട്ടു!",
+  "groupSnackBarError": "അംഗം ചേര്‍ക്കാന്‍ കഴിയാത്തത്!",
+  "groupAppBarTitle": "നിങ്ങളുടെ ഗ്രൂപ്പ്",
+  "groupUserSearchHintText": "ഉപയോക്താവിന്റെ ഐഡിയെടുക്കാം",
+  "groupMembersTitle": "അംഗങ്ങള്‍",
+
+  "sosAppbarTitle": "എസ്ഓഎസ്",
+  "sosActionText": "നിങ്ങളുടെ സ്ഥാനത്തുള്ള അംഗങ്ങള്‍ക്ക് ഒരു സ്വല്‍പ സതാക്ഷി അയയ്ക്കുന്നു",
+  "sosSendingText": "അയയ്ക്കൽ പ്രവര്‍ത്തിപ്പിക്കുന്നു",
+  "sosCancelText": "റദ്ദാക്കുകയാണ് മറ്റൊന്ന് അമർത്തുക",
+
+  "fakeCallAppBarTitle": "കൃത്രിമ കോൾ",
+  "fakeCallActionText": "നന്നേ കോൾ ചെയ്യുക",
+  "fakeCallSeconds": "സെക്കൻഡ്",
+  "fakeCallHintText": "കോൾകാരന്റെ പേര് ചേർക്കുക",
+  "fakeCallCallMeText": "ഞാൻ കോൾ ചെയ്യുക",
+  "fakeCallCallingIn": "കോൾ ചെയ്യുന്നു",
+  "fakeCallCancelText": "റദ്ദുചെയ്യുക",
+
+  "profileAppBarText": "നിങ്ങളുടെ പ്രൊഫൈല്‍",
+  "profileSnackBarText": "വര്‍ണകോശത്തില്‍ നകല്‍ ചെയ്യപ്പെട്ടു!",
+  "profileChangeLanguageText": "ഭാഷ മാറ്റുക",
+  "profileSignOutText": "ലോഗ് ഔട്ട്",
+
+  "locationDetailsAppBarText": "സ്ഥലം വിവരങ്ങള്‍",
+  "locationLastUpdatedText": "അവസാന അപ്ഡേറ്റ്",
+  "locationLastUpdatedTrip": "അവസാന അപ്ഡേറ്റുചെയ്ത ട്രിപ്പ്",
+  "locationFrom": "മുതല്‍",
+  "locationTo": "വരെ",
+  "locationVehicleNo": "വാഹന നമ്പര്‍",
+
+  "allSOSAppBarText": "എല്ലാ എസ്ഓഎസ്",
+
+  "sosDetailsAppBarTitle": "എസ്ഓഎസ് വിവരങ്ങള്‍",
+
+  "changeLanguageAppBarText": "ഭാഷ മാറ്റുക",
+  "changeLanguagePreferredLangugage": "നിങ്ങളുടെ ആദ്യത്തെ ഭാഷ തിരഞ്ഞെടുക്കുക",
+
+  "bottomNavigationHome": "ഹോം",
+  "bottomNavigationMyGroup": "എന്റെ ഗ്രൂപ്പ്",
+  "bottomNavigationSOS": "എസ്‌ഒ്‌എസ്‌",
+  "bottomNavigationFakeCall": "കൊട്ടാരം വിളി",
+  "bottomNavigationProfile": "പ്രൊഫൈല്‍"
+}

@@ -39,6 +39,16 @@ class MyApp extends StatelessWidget {
       supportedLocales: const [
         Locale('en'),
         Locale('hi'),
+        Locale('ta'),
+        Locale('bn'),
+        Locale('gu'),
+        Locale('kn'),
+        Locale('ml'),
+        Locale('mr'),
+        Locale('pa'),
+        Locale('te'),
+        Locale('or'),
+        Locale('ur'),
       ],
 
       // locale: const Locale('en'),
@@ -52,8 +62,8 @@ class MyApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate
       ],
       debugShowCheckedModeBanner: false,
-      // home: showHome ? const AuthPage() : const OnboardingPage(),
-      home: const OnboardingPage(),
+      home: showHome ? const AuthPage() : const OnboardingPage(),
+      // home: const OnboardingPage(),
       routes: {
         '/login': (context) => const LoginPage(),
         '/signup': (context) => const SignUpPage(),
