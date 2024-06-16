@@ -76,6 +76,7 @@ class _SOSPageState extends State<SOSPage> {
   }
 
   void startTimer() {
+    HapticFeedback.heavyImpact();
     setState(() {
       _isTimerRunning = true;
     });
@@ -85,6 +86,7 @@ class _SOSPageState extends State<SOSPage> {
           HapticFeedback.heavyImpact();
           _timerCount--;
         } else {
+          HapticFeedback.heavyImpact();
           _getLocation();
           _isTimerRunning = false;
           _timerCount = 3;

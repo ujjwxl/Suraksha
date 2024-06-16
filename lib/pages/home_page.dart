@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:trackingapp/pages/fake_call_page.dart';
 import 'package:trackingapp/pages/group_page.dart';
 import 'package:trackingapp/pages/main_home_page.dart';
+import 'package:trackingapp/pages/new_profile_page.dart';
 import 'package:trackingapp/pages/profile_page.dart';
 import 'package:trackingapp/pages/sos_page.dart';
 
@@ -20,7 +21,8 @@ class _HomePageState extends State<HomePage> {
     const GroupPage(),
     const SOSPage(),
     const FakeCallPage(),
-    const ProfilePage(),
+    // const ProfilePage(),
+    const NewProfilePage(),
   ];
 
   @override
