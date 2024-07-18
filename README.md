@@ -1,4 +1,5 @@
-# Suraksha
+# Suraksha <img src="https://github.com/user-attachments/assets/11391df8-4e8d-490a-b05d-def3cb0c1134" alt="Home Screen" width="50" height="50"/>
+
 
 **Suraksha** is a mobile application developed in Flutter that aims to provide travelers a platform to share their live location with their family and friends while traveling. <br/>
 It has been developed with a special focus on enhancing safety for women, acknowledging the unique challenges they may face while traveling.
@@ -56,3 +57,7 @@ Here are some screenshots of the app:
   <img src="https://github.com/user-attachments/assets/15797c4e-0205-4921-907b-9a6edccba9b2" alt="Live Location Sharing" width="200" height="420"/>
   <img src="https://github.com/user-attachments/assets/34b17070-54e3-4fe1-b91e-c4d684bafd9d" alt="Live Location Sharing" width="200" height="420"/>
 </p>
+
+## Contact
+
+Have questions or suggestions? Feel free to reach out to me [here](https://www.linkedin.com/in/ujjwalkumar14/)
